@@ -24,7 +24,7 @@
  On the HPC cluster `qstat+` was developed for, we have implemented a memeory reservation and a local SSD usage request, hence `qstat+` can return information related to both.
   ...
 
-### Practical Considerations
+## Practical Considerations
 
  We run Altair's Grid Engine version 8.8.1 with a customized configuration, hence `qstat+` is tailored to that configuration.
  It is my intention (_in my spare time_) to clean `qstat+` to clearly identify what is specific to our configuration.
@@ -35,44 +35,25 @@
  * we have local SSD
 
 `qstat+` can be run in different (exclusive) modes:
-  1.  show summary (simple, extended or compact)
-  2.  show all jobs
-  3.  show queued jobs
-  4.  show running jobs
-  5.  show extra jobs (dr, Eqw, t)
-  6.  show info on a specific job
-  7.  show node list for a (set of) job(s)
-  8.  show node(s) with high load
-  9.  show global cluster status
- 10.  show empty slots, -esx: expanded info
- 11.  show node(s) that are down
- 12.  show overreserved jobs, i.e.: resMem/maxVMem > 2.5, & age > 1 hr
- 13.  show oversubscribed jobs, i.e.: cpu% > 133%, & age > 1 hr
- 14.  show inefficient jobs, i.e.: cpu% < 33%, & age > 1 hr
- 15.  show SSD usage
- 16 . show help
- 17.  show examples
+  1. show summary (simple, extended or compact)
+  2. show all jobs
+  3. show queued jobs
+  4. show running jobs
+  5. show extra jobs (dr, Eqw, t)
+  6. show info on a specific job
+  7. show node list for a (set of) job(s)
+  8. show node(s) with high load
+  9. show global cluster status
+ 10. show empty slots, -esx: expanded info
+ 11. show node(s) that are down
+ 12. show overreserved jobs, i.e.: resMem/maxVMem > 2.5, & age > 1 hr
+ 13. show oversubscribed jobs, i.e.: cpu% > 133%, & age > 1 hr
+ 14. show inefficient jobs, i.e.: cpu% < 33%, & age > 1 hr
+ 15. show SSD usage
+ 16. show help
+ 17. show examples
 
  and in *debug* mode, for debugging & testing.
-
-#### Debugging & testing.
-
- The flag `-debug DIR` directs `qstat+` to read from files, located in the directory `DIR`, instead of running `qstat`, hence these files shoulf hold the output of the commands it would run. Examples of such files are provided in the `debug.tgz` archive. You can created, where the output 
- To use this lfag you must either
- copy the provided files (qstat-f.xml qstat-j-2343013.txt qstat-r.xml qstat-ssd.txt) to /tmp (and rename qstat-j-2343013.txt as qstat-j.txt) or run the following commands
-
-```
-  qstat -xml -r -ext -u \* > /tmp/qstat-r.xml
-  qstat -xml -f -u \*      > /tmp/qstat-f.xml
-```
-or
-```
-  qstat -j JID             > /tmp/qstat-j.txt
-```
-with a specific job id, or to show SSD usage and reservation
-```
-  qstat -F ssd_res,ssd_free,ssd_total -q all.q@@ssd-hosts -u nobody > /tmp/qstat-ssd.txt
-```
  
 ### Usage info
 
@@ -150,7 +131,7 @@ shorthands:
     +X                  -X -u $USER -nofooter             show all your extra jobs
     +n                  -notty -wide -noheader -nofooter
 
-qstat+: Ver 5.3/5 - Jun 2024
+qstat+: Ver 5.5/2 - Jun 2024
 ```
 
 #### Usage Examples
@@ -176,28 +157,93 @@ examples:
         +ax% -u all                 is equiv to -a -u all -cpu% -load -sua -mem
                              etc... for the +XXX shorthands
 
-qstat+: Ver 5.3/5 - Jun 2024
+qstat+: Ver 5.5/2 - Jun 2024
+```
+### Customization
+
+To run this on a different GE cluster, one needs to redefine some of the variables near the top of the ``PERL`` script:
+```
 ```
 
-### Examples
+### Debugging & Testing
 
- Using the provided files, you can do the following
+#### Explanation
 
- 1. First copy the test files to /tmp
-```
-cp qstat-f.xml qstat-r.xml qstat-ssd.txt /tmp
-cp qstat-j-2343013.txt /tmp/qstat-j.txt
-```
- 2. Now you can run qstat+ in fake mode
+ The flag `-debug DIR` directs `qstat+` to read from files, located in the directory `DIR`, instead of running `qstat` and parsing its output, hence these files must contain the output of the commands `qstat+` would have run. 
+ Examples of such files are provided in the `debug.tgz` archive, where 6 examples are available, including one when using the original SGE, not AGE 8.8.1. 
 
+ One creates these files as follows: 
 ```
-qstat+ -fake -s
+  qstat -xml -r -ext -u \* > dbg/qstat-r.xml
+  qstat -xml -f -u \*      > dbg/qstat-f.xml
 ```
-
 or
+```
+  qstat -j JID             > dbg/qstat-j-JID.txt
+```
+with a specific job id;
+
+or to show SSD usage and reservation:
+```
+  qstat -F ssd_res,ssd_free,ssd_total -q all.q@@ssd-hosts -u nobody > /tmp/qstat-ssd.txt
+```
+#### Examples
+
+Using the provided files, you can do the following:
+
+ 1. First untar the archive
+```
+tar xf debug.tgz
 
 ```
-qstat+ -fake -a
-qstat+ -fake +a%
+ 2. Run `qstat+` in debug mode
 
-except `-ores`, since it needs to run additional `qstat -j`
+  * Examples 0
+```
+qstat+ -debug ex.0
+qstat+ -debug ex.0 -j 2343013
+qstat+ -debug ex.0 -j 2343013.1
+```
+  * Examples 1: various modes
+```
+qstat+ -debug ex.1
+qstat+ -debug ex.1 -gc
+qstat+ -debug ex.1 -es
+qstat+ -debug ex.1 -esx
+qstat+ -debug ex.1 -down
+qstat+ -debug ex.1 -ssd
+qstat+ -debug ex.1 -sx
+qstat+ -debug ex.1 -q
+qstat+ -debug ex.1 -r
+qstat+ -debug ex.1 -X
+```
+  * Examples 2: specific large MPI job
+```
+qstat+ -debug ex.2
+qstat+ -debug ex.2 -j 2437501
+qstat+ -debug ex.2 -nlist 2437501
+```
+  * Examples 3: specific user, job array
+```
+qstat+ -debug ex.3
+qstat+ -debug ex.3 +a% -u erickoch
+qstat+ -debug ex.3 -j 2436756
+qstat+ -debug ex.3 -j 2436756.1
+qstat+ -debug ex.3 -j 2436756.3
+```
+   * Examples 4: differrent user, lots of jobs
+```
+qstat+ -debug ex.4 +a% -u ingushin
+qstat+ -debug ex.4 -j 2435983
+qstat+ -debug ex.4 -nlist 2435983 -u ingushin
+```
+   * SGE example
+```
+qstat+ -debug sge -geType sge +a% -u all
+```
+3. Comparaison file:
+
+The file `test-debug.log` illustrates the output from these commands.
+
+---
+
