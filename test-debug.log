@@ -1,0 +1,1801 @@
+
+qstat+ -debug ex.0
+qstat+: ExecQstat(): executing <cat ex.0/qstat-r.xml>
+qstat+: ExecQstat(): executing <cat ex.0/qstat-f.xml>
+Total running (PEs/jobs) = 2818/1778, 1 queued (jobs) for all users.
+  20 users with running jobs (PEs/jobs):
+         16/1 for bourkeb
+       307/24 for campanam
+         40/1 for chaks
+         72/4 for connellym
+         32/4 for erickoch
+         48/1 for figueiroh
+           89 for gresse
+          8/1 for hawkinsmt
+           14 for holmk
+      832/802 for ingushin
+          8/1 for jassoj
+          797 for jyee
+         85/2 for myerse
+         20/1 for roa-varona
+            4 for spasojevict
+        29/13 for talaveraa
+        280/7 for tholland
+        100/5 for uribeje
+         20/5 for willish
+         17/2 for zhangy
+  1 user with jobs/tasks queued jobs (jobs/tasks):
+         1/10 for jyee
+Load=2803.9, 5568/296 slots avail/disabled (76 nodes, 2 down), licenses: none used.
+ 26/8 queue entries disabled/need attention, cluster is 50.6% used at 99.5% eff.
+
+qstat+ -debug ex.0 -j 2343013
+qstat+: ExecQstat(): executing <cat ex.0/qstat-j-2343013.txt>
+ job_number:                  2343013
+ job_name:                    Xip_771
+ submission_time:             06/21/2024 08:18:41.128
+ cwd:                         /pool/sao/ingushin/AF_2021_prime/KB210424_Xallarap_TEST/t_771
+ script_file:                 task.job
+ hard_queue_list:             mThC.q
+ usage                 1:     wallclock = 5:09:18:04, cpu = 5:08:51:48, mem = 34161.62471 GBs, io = 0.06423 GB, iow = 0.100 s, ioops = 16324, vmem = 93.953M, maxvmem = 183.434M, rss = 32.957M, maxrss = 75.336M, pss = 26.146M, smem = 6.996M, pmem = 25.961M, maxpss = 67.586M
+
+qstat+ -debug ex.0 -j 2343013.1
+qstat+: ExecQstat(): executing <cat ex.0/qstat-j-2343013.txt>
+ job_number:                  2343013
+ job_name:                    Xip_771
+ submission_time:             06/21/2024 08:18:41.128
+ cwd:                         /pool/sao/ingushin/AF_2021_prime/KB210424_Xallarap_TEST/t_771
+ script_file:                 task.job
+ hard_queue_list:             mThC.q
+ usage                 1:     wallclock = 5:09:18:04
+                              cpu = 5:08:51:48
+                              mem = 34161.62471 GBs
+                              io = 0.06423 GB
+                              iow = 0.100 s
+                              ioops = 16324
+                              vmem = 93.953M
+                              maxvmem = 183.434M
+                              rss = 32.957M
+                              maxrss = 75.336M
+                              pss = 26.146M
+                              smem = 6.996M
+                              pmem = 25.961M
+                              maxpss = 67.586M
+
+qstat+ -debug ex.1
+qstat+: ExecQstat(): executing <cat ex.1/qstat-r.xml>
+qstat+: ExecQstat(): executing <cat ex.1/qstat-f.xml>
+Total running (PEs/jobs) = 2358/1074, 0 queued (job) for all users.
+  19 users with running jobs (PEs/jobs):
+         60/3 for brandaor
+         12/1 for cabreroa
+        53/22 for campanam
+         40/1 for chaks
+         24/1 for connellym
+         96/6 for erickoch
+           96 for gresse
+            5 for holmk
+      800/203 for ingushin
+         68/3 for jassoj
+          703 for jyee
+         85/2 for myerse
+            1 for pappalardop
+         20/1 for roa-varona
+            6 for spasojevict
+         19/2 for talaveraa
+         62/7 for uribeje
+         96/3 for villanueval
+        112/8 for zhangy
+Load=1815.9, 5568/296 slots avail/disabled (76 nodes, 2 down), licenses: none used.
+ 26/8 queue entries disabled/need attention, cluster is 42.3% used at 77.0% eff.
+
+qstat+ -debug ex.1 -gc
+qstat+: ExecQstat(): executing <cat ex.1/qstat-f.xml>
+   ---- queue ----  ----- #nodes ---- - ---------- #slots ----------- - ------------
+   name       load  total avail  down - total used  resvd  down avail - %full  %eff
+
+   sThC.q   1793.3     66    66     0 -  5176     8     0     0  5168 -   0.2
+   mThC.q   1793.3     66    66     0 -  5176  1766     0     0  3410 -  34.1
+   lThC.q   1793.3     66    66     0 -  5176   116     0     0  5060 -   2.2
+   uThC.q   1793.3     66    66     0 -  5176    24     0     0  5152 -   0.5  93.7
+
+   sThM.q   1553.7     57    57     0 -  5160     0     0     0  5160 -   0.0
+   mThM.q   1551.3     54    54     0 -  4680   301     0     0  4379 -   6.4
+   lThM.q   1551.3     54    54     0 -  4680   103     0     0  4577 -   2.2
+   uThM.q   1551.3     54    54     0 -  4680     0     0     0  4680 -   0.0 384.0
+
+   uTxlM.rq    2.4      3     3     0 -   480    40     0     0   440 -   8.3   6.1
+
+   lTIO.sq     0.0      2     2     0 -     8     0     0     0     8 -   0.0   0.0
+
+   sTgpu.q     0.0      1    -1     2 -    64     0     0    40    24 -   0.0
+   mTgpu.q     0.0      1    -1     2 -    64     0     0    40    24 -   0.0
+   lTgpu.q     0.0      1    -1     2 -    64     0     0    40    24 -   0.0   0.0
+
+   qgpu.iq     0.0      1    -1     2 -    64     0     0    40    24 -   0.0
+   qrsh.iq     0.1      2     2     0 -    40     0     0     0    40 -   0.0
+
+qstat+ -debug ex.1 -es
+qstat+: ExecQstat(): executing <cat ex.1/qstat-f.xml>
+Cluster load=1801, running=2335/5536, 3201 empty slots (296 disabled)
+        116 slots used in lThC.q
+        103 slots used in lThM.q
+       1759 slots used in mThC.q
+        285 slots used in mThM.q
+          8 slots used in sThC.q
+         24 slots used in uThC.q
+         40 slots used in uTxlM.rq
+
+    8/  8.0 slots/CPUs empty in lTIO.sq qrsh.iq
+   72/ 70.7 slots/CPUs empty in lTb2g.q lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+   64/ 64.0 slots/CPUs empty in lTgpu.q mTgpu.q qgpu.iq sTgpu.q
+ 2280/2647.6 slots/CPUs empty in lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  295/298.0 slots/CPUs empty in lThC.q mThC.q sThC.q uThC.q
+   40/ 43.9 slots/CPUs empty in lThM.q lThMuVM.tq mThM.q sThM.q uThM.q
+  440/477.6 slots/CPUs empty in sThM.q uTxlM.rq
+
+qstat+ -debug ex.1 -esx
+qstat+: ExecQstat(): executing <cat ex.1/qstat-f.xml>
+Cluster load=1801, running=2335/5536, 3201 empty slots (296 disabled)
+        116 slots used in lThC.q
+        103 slots used in lThM.q
+       1759 slots used in mThC.q
+        285 slots used in mThM.q
+          8 slots used in sThC.q
+         24 slots used in uThC.q
+         40 slots used in uTxlM.rq
+
+      slot(s) CPU   no of slots      queues
+ host  empty  free (avail used load) avail
+  50-01   64  64.0 ( 64    0    0.0) lTgpu.q mTgpu.q qgpu.iq sTgpu.q
+  64-02   19  23.2 ( 40   21   16.8) lThC.q mThC.q sThC.q uThC.q
+  64-03   26  25.9 ( 40   14   14.1) lThC.q mThC.q sThC.q uThC.q
+  64-04   20  19.3 ( 40   20   20.7) lThC.q mThC.q sThC.q uThC.q
+  64-05   30  29.9 ( 40   10   10.1) lThC.q mThC.q sThC.q uThC.q
+  64-06   30  29.9 ( 40   10   10.1) lThC.q mThC.q sThC.q uThC.q
+  64-07   24  23.8 ( 40   16   16.2) lThC.q mThC.q sThC.q uThC.q
+  64-08   29  28.9 ( 40   11   11.1) lThC.q mThC.q sThC.q uThC.q
+  64-09   13  13.4 ( 40   27   26.6) lThC.q mThC.q sThC.q uThC.q
+  64-10   26  26.0 ( 40   14   14.0) lThC.q mThC.q sThC.q uThC.q
+  64-12   26  25.9 ( 40   14   14.1) lThC.q mThC.q sThC.q uThC.q
+  64-13   25  24.9 ( 40   15   15.1) lThC.q mThC.q sThC.q uThC.q
+  64-14   27  26.9 ( 40   13   13.1) lThC.q mThC.q sThC.q uThC.q
+  64-15    4   4.0 (  4    0    0.0) lTIO.sq qrsh.iq
+  64-16    4   4.0 (  4    0    0.0) lTIO.sq qrsh.iq
+  64-17   16  21.4 ( 32   16   10.6) lThM.q lThMuVM.tq mThM.q sThM.q uThM.q
+  64-18   24  22.5 ( 32    8    9.5) lThM.q lThMuVM.tq mThM.q sThM.q uThM.q
+  65-02   43  43.0 ( 64   21   21.0) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-03   35  49.5 ( 64   29   14.5) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-04   19  19.0 ( 64   45   45.0) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-05   39  38.8 ( 64   25   25.2) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-06    4  18.9 ( 64   60   45.1) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-07   22  21.0 ( 64   42   43.0) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-09   47  47.0 ( 64   17   17.0) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-10   43  42.5 ( 64   21   21.5) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-11   34  47.2 ( 64   30   16.8) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-12   11  60.3 ( 64   53    3.7) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-13   48  47.9 ( 64   16   16.1) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-14   39  40.5 ( 64   25   23.5) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-15   47  46.8 ( 64   17   17.2) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-16   46  46.1 ( 64   18   17.9) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-17   45  44.7 ( 64   19   19.3) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-18    2  55.9 ( 64   62    8.1) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-19   12  11.8 ( 64   52   52.2) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-21   42  42.0 ( 64   22   22.0) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-22   47  46.9 ( 64   17   17.1) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-23   42  41.7 ( 64   22   22.3) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-24   49  49.0 ( 64   15   15.0) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-25    5   4.6 ( 64   59   59.4) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-26   50  50.0 ( 64   14   14.0) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-27   39  46.8 ( 64   25   17.2) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-28   36  35.8 ( 64   28   28.2) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-29    7   7.0 ( 64   57   57.0) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  65-30   32  36.6 ( 64   32   27.4) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  75-01  105 105.6 (128   23   22.4) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  75-02   78  93.5 (128   50   34.5) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  75-03   56  56.0 (128   72   72.0) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  75-04   59  81.6 (128   69   46.4) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  75-05   85  91.3 (128   43   36.7) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  75-06   83  96.0 (128   45   32.0) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  76-01  192 191.9 (192    0    0.1) sThM.q uTxlM.rq
+  76-02  192 191.9 (192    0    0.1) sThM.q uTxlM.rq
+  76-03   68 107.7 (128   60   20.3) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  76-04   86 100.8 (128   42   27.2) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  76-05   51  50.8 (128   77   77.2) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  76-06   83  95.3 (128   45   32.7) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  76-07   62  76.5 (128   66   51.5) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  76-08   96  95.9 (128   32   32.1) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  76-09   38  82.2 (128   90   45.8) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  76-11   61  76.5 (128   67   51.5) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  76-12  102 101.9 (128   26   26.1) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  76-13   78  94.7 (128   50   33.3) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  84-01   72  70.7 (112   40   41.3) lTb2g.q lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  93-01   47  45.7 ( 64   17   18.3) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  93-02   54  53.5 ( 72   18   18.5) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  93-03   49  48.9 ( 72   23   23.1) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  93-04   54  51.7 ( 72   18   20.3) lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  93-05   56  93.8 ( 96   40    2.2) sThM.q uTxlM.rq
+
+    8/  8.0 slots/CPUs empty in lTIO.sq qrsh.iq
+   72/ 70.7 slots/CPUs empty in lTb2g.q lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+   64/ 64.0 slots/CPUs empty in lTgpu.q mTgpu.q qgpu.iq sTgpu.q
+ 2280/2647.6 slots/CPUs empty in lThC.q lThM.q lThMuVM.tq mThC.q mThM.q sThC.q sThM.q uThC.q uThM.q
+  295/298.0 slots/CPUs empty in lThC.q mThC.q sThC.q uThC.q
+   40/ 43.9 slots/CPUs empty in lThM.q lThMuVM.tq mThM.q sThM.q uThM.q
+  440/477.6 slots/CPUs empty in sThM.q uTxlM.rq
+
+qstat+ -debug ex.1 -down
+qstat+: ExecQstat(): executing <cat ex.1/qstat-f.xml>
+2 nodes down: 79-01 79-02
+
+qstat+ -debug ex.1 -ssd
+qstat+: ExecQstat(): executing <cat ex.1/qstat-ssd.txt>
+  Node   -------------------------- /ssd -------------------------------
+  Name     Size   Used  Avail    Use% |   Resd  Avail  Resd% | Resd/Used
+ 50-01    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 64-17    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 64-18    3.49T  24.6G  3.47T    0.7% |   0.0G  3.49T   0.0% |   0.00
+ 65-02    3.49T  24.6G  3.47T    0.7% |   0.0G  3.49T   0.0% |   0.00
+ 65-03    3.49T  24.6G  3.47T    0.7% |   0.0G  3.49T   0.0% |   0.00
+ 65-04    3.49T  24.6G  3.47T    0.7% |   0.0G  3.49T   0.0% |   0.00
+ 65-05    3.49T  24.6G  3.47T    0.7% |   0.0G  3.49T   0.0% |   0.00
+ 65-06    3.49T  24.6G  3.47T    0.7% |   0.0G  3.49T   0.0% |   0.00
+ 65-09    3.49T  24.6G  3.47T    0.7% |   0.0G  3.49T   0.0% |   0.00
+ 65-10    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-11    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-12    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-13    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-14    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-15    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-16    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-17    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-18    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-19    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-20    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-21    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-22    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-23    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-24    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-25    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-26    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-27    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-28    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-29    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 65-30    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 75-02    6.98T  50.2G  6.93T    0.7% |   0.0G  6.98T   0.0% |   0.00
+ 75-03    6.98T  50.2G  6.93T    0.7% |   0.0G  6.98T   0.0% |   0.00
+ 75-04    6.98T  50.2G  6.93T    0.7% |   0.0G  6.98T   0.0% |   0.00
+ 75-05    6.98T  50.2G  6.93T    0.7% |   0.0G  6.98T   0.0% |   0.00
+ 75-06    6.98T  50.2G  6.93T    0.7% |   0.0G  6.98T   0.0% |   0.00
+ 75-07    6.98T  50.2G  6.93T    0.7% |   0.0G  6.98T   0.0% |   0.00
+ 76-03    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 76-04    1.75T  12.3G  1.73T    0.7% |   0.0G  1.75T   0.0% |   0.00
+ 76-13    1.75T  31.7G  1.71T    1.8% |   0.0G  1.75T   0.0% |   0.00
+ 93-05    6.98T  50.2G  6.93T    0.7% |   0.0G  6.98T   0.0% |   0.00
+         ---------------------------------------------------------------
+ Total   118.7T 862.2G 117.8T    0.7% |   0.0G 118.7T   0.0% |   0.00
+
+qstat+ -debug ex.1 -sx
+qstat+: ExecQstat(): executing <cat ex.1/qstat-r.xml>
+qstat+: ExecQstat(): executing <cat ex.1/qstat-f.xml>
+Mon Jul  1 10:40:54 2024 running=2358/1074 queued=0
+ loads=0.0; 0.0; 0.0; 0.0; 0.0 nsd=0.0; 0.0
+ 19 users with running job(s)
+ 0 user with queued job(s)
+Cluster load=1815.9 CPUs=5568 nodes=76 down=2
+ queues=all.q:0,76,0,0,0
+     lTIO.sq:0.017,2,0,0,8
+     lTb2g.q:0.7375,1,0,0,2
+     lTgpu.q:0,3,0,0,64
+     lThC.q:1793.29536,66,116,0,5176
+     lThM.q:1551.26536,54,103,0,4680
+     lThMuVM.tq:71.20512,54,0,0,384
+     mTgpu.q:0,3,0,0,64
+     mThC.q:1793.29536,66,1766,0,5176
+     mThM.q:1551.26536,54,301,0,4680
+     qgpu.iq:0,3,0,0,64
+     qrsh.iq:0.085,2,0,0,40
+     sTgpu.q:0,3,0,0,64
+     sThC.q:1793.29536,66,8,0,5176
+     sThM.q:1553.69512,57,0,0,5160
+     uThC.q:1793.29536,66,24,0,5176
+     uThM.q:1551.26536,54,0,0,4680
+     uTxlM.rq:2.42976,3,40,0,480
+ down=79-01,79-02
+ disabled_slots=296
+ racks=50/1 64/18 65/28 75/7 76/14 79/2 84/1 93/5
+ licenses=
+ qstate=d:26:lThMuVM.tq=2:lThM.q=2:uThC.q=2:sTgpu.q=2:mTgpu.q=2:uThM.q=2:sThC.q=2:lTgpu.q=2:qgpu.iq=2:lThC.q=2:mThM.q=2:mThC.q=2:sThM.q=2 a:8:sTgpu.q=2:mTgpu.q=2:qgpu.iq=2:lTgpu.q=2 e:0
+
+qstat+ -debug ex.1 -q
+qstat+: ExecQstat(): executing <cat ex.1/qstat-r.xml>
+qstat+: ExecQstat(): executing <cat ex.1/qstat-f.xml>
+Total running (PEs/jobs) = 2358/1074, 0 queued (job) for all users.
+Load=1815.9, 5568/296 slots avail/disabled (76 nodes, 2 down), licenses: none used.
+ 26/8 queue entries disabled/need attention, cluster is 42.3% used at 77.0% eff.
+
+qstat+ -debug ex.1 -r
+qstat+: ExecQstat(): executing <cat ex.1/qstat-r.xml>
+qstat+: ExecQstat(): executing <cat ex.1/qstat-f.xml>
+Total running (PEs/jobs) = 2358/1074, 0 queued (job) for all users.
+     jobID name                                                       user            sub/start   nPEs  queue     node taskID
+   2435005 K210919_L3                                                 ingushin        06/27 11:48  200  mThC.q   76-10       
+   2437498 K210919_L1                                                 ingushin        06/27 18:12  200  mThC.q   65-04       
+   2437501 K210919_L2                                                 ingushin        06/27 18:14  200  mThC.q   64-11       
+   2149339 iqtree2.job                                                myerse          06/17 17:28   45  mThC.q   75-04       
+   1269222 masurca_2024.sh                                            chaks           06/08 14:28   40  uTxlM.rq 93-05       
+   2346891 beast                                                      myerse          06/24 21:38   40  mThC.q   76-03       
+   2438280 unionoida                                                  villanueval     06/28 09:52   32  mThC.q   75-06       
+   2438281 unionoida                                                  villanueval     06/28 09:52   32  mThC.q   75-02       
+   2438282 unionoida                                                  villanueval     06/28 09:52   32  mThC.q   76-13       
+   2428602 digit_200_mill_50_Karen_yule                               jassoj          06/26 19:22   30  lThC.q   76-11       
+   2428603 informative_200_50_bylocus_with_stem_Aph_yule              jassoj          06/26 19:24   30  lThC.q   65-07       
+   1069458 snapp_run                                                  connellym       06/03 14:36   24  lThC.q   64-09       
+   1862481 vs-genome-ref-15317.job                                    roa-varona      06/13 12:03   20  lThM.q   84-01       
+   2438246 bayesass3725                                               brandaor        06/28 08:32   20  mThM.q   76-10       
+   2438247 bayesass1921                                               brandaor        06/28 08:36   20  mThM.q   65-18       
+   2438248 bayesass2431                                               brandaor        06/28 08:39   20  mThM.q   76-10       
+   2179499 Orthofinder                                                zhangy          06/19 12:58   16  lThM.q   76-07       
+   2436756 casa_m83_imaging                                           erickoch        06/27 14:57   16  mThM.q   65-06      1
+   2436756 casa_m83_imaging                                           erickoch        06/27 14:57   16  mThM.q   76-04      2
+   2436756 casa_m83_imaging                                           erickoch        06/27 14:57   16  mThM.q   76-14      3
+   2436756 casa_m83_imaging                                           erickoch        06/27 14:57   16  mThM.q   76-06      4
+   2436756 casa_m83_imaging                                           erickoch        06/27 14:57   16  mThM.q   65-20      5
+   2436756 casa_m83_imaging                                           erickoch        06/27 14:57   16  mThM.q   65-03      6
+   2437361 Eury70p_regular                                            zhangy          06/27 16:34   16  mThC.q   64-04       
+   2437365 Eury50p_regular                                            zhangy          06/27 16:36   16  mThC.q   76-09       
+   2437496 Eury50p_swsc                                               zhangy          06/27 18:10   16  uThC.q   75-05       
+   2437540 nf-alignSeqs_(26)                                          campanam        06/27 18:24   16  mThM.q   65-11       
+   2438208 Eury70p_swsc                                               zhangy          06/28 03:34   16  mThC.q   76-09       
+   2438210 Eury50p_reg_AA                                             zhangy          06/28 03:49   16  mThC.q   75-01       
+   2428404 spades                                                     cabreroa        06/26 17:13   12  mThC.q   64-02       
+   2429821 nov82                                                      uribeje         06/27 06:45   10  lThM.q   64-17       
+   2432521 nov82                                                      uribeje         06/27 11:34   10  lThM.q   65-18       
+   2432522 nov82                                                      uribeje         06/27 11:35   10  lThM.q   76-09       
+   2437999 iqtree2_V.cinerea_complex_notrimmed_962genes_ibc           talaveraa       06/27 21:25   10  lThM.q   65-27       
+   2428425 iqtree2_V.cinerea_complex_trimmed_961genes                 talaveraa       06/26 17:52    9  lThM.q   76-11       
+   1186073 mostafa_MICMGM_10May                                       jassoj          06/05 18:06    8  uThC.q   64-01       
+   2429645 SC20                                                       uribeje         06/27 04:45    8  lThC.q   76-09       
+   2429646 SC20                                                       uribeje         06/27 04:46    8  lThC.q   76-09       
+   2429653 SC20                                                       uribeje         06/27 04:59    8  lThC.q   76-09       
+   2429655 SC20                                                       uribeje         06/27 04:59    8  lThC.q   76-09       
+   2437360 Eury70p_sym                                                zhangy          06/27 16:34    8  mThM.q   84-01       
+   2437367 Eury50p_sym                                                zhangy          06/27 16:36    8  mThM.q   65-30       
+   2438283 nf-flagStats_(70)                                          campanam        06/28 09:54    8  sThC.q   65-12       
+   2344995 nf-realignIndels_(3)                                       campanam        06/23 05:23    2  mThC.q   75-04       
+   2345018 nf-callVariants_(1)                                        campanam        06/23 06:40    2  lThM.q   64-18       
+   2345020 nf-callVariants_(2)                                        campanam        06/23 06:54    2  lThM.q   76-09       
+   2345024 nf-callVariants_(3)                                        campanam        06/23 07:16    2  lThM.q   64-17       
+   2345130 nf-realignIndels_(1)                                       campanam        06/23 18:34    2  mThC.q   76-14       
+   2345133 nf-realignIndels_(4)                                       campanam        06/23 18:34    2  mThC.q   76-11       
+   2345167 nf-callVariants_(2)                                        campanam        06/23 19:17    2  lThM.q   65-16       
+   2345168 nf-callVariants_(3)                                        campanam        06/23 19:30    2  lThM.q   65-14       
+   2345169 nf-callVariants_(4)                                        campanam        06/23 19:35    2  lThM.q   65-14       
+   2346337 augustus_HiC_scaffold_1                                    holmk           06/24 12:25    1  mThM.q   76-08       
+   2346346 augustus_HiC_scaffold_2                                    holmk           06/24 12:25    1  mThM.q   65-13       
+   2346347 augustus_HiC_scaffold_3                                    holmk           06/24 12:25    1  mThM.q   65-24       
+   2346350 augustus_HiC_scaffold_6                                    holmk           06/24 12:25    1  mThM.q   65-23       
+   2346351 augustus_HiC_scaffold_7                                    holmk           06/24 12:25    1  mThM.q   93-01       
+   2350471 FossRate_37_Intervals_SimpleRandom_operator                spasojevict     06/25 18:29    1  lThM.q   75-05       
+   2350472 FossRate_37_Intervals_SimpleRandom_operator                spasojevict     06/25 18:35    1  lThM.q   64-17       
+   2425614 FossRate_37_Intervals_SimpleRandom_operator                spasojevict     06/26 09:29    1  lThM.q   65-07       
+   2429189 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-10       
+   2429190 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   64-18       
+   2429191 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-30       
+   2429192 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-10       
+   2429193 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-30       
+   2429194 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-10       
+   2429195 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   64-18       
+   2429196 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-30       
+   2429197 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-14       
+   2429198 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-10       
+   2429199 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-30       
+   2429200 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-14       
+   2429201 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-10       
+   2429202 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   64-18       
+   2429203 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-05       
+   2429204 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-23       
+   2429205 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-30       
+   2429206 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-16       
+   2429207 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-14       
+   2429208 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-10       
+   2429209 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-05       
+   2429210 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-23       
+   2429211 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-30       
+   2429212 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-16       
+   2429213 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   76-07       
+   2429214 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-14       
+   2429215 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-22       
+   2429216 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-10       
+   2429217 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   64-18       
+   2429218 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-05       
+   2429219 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   76-07       
+   2429220 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-25       
+   2429221 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-23       
+   2429222 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-30       
+   2429223 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-16       
+   2429224 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-02       
+   2429225 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   76-07       
+   2429226 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-14       
+   2429227 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-22       
+   2429228 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-10       
+   2429229 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-05       
+   2429230 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   76-10       
+   2429231 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   76-07       
+   2429232 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-23       
+   2429233 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-25       
+   2429234 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-30       
+   2429235 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-16       
+   2429236 grandis_onePalau                                           gresse          06/27 01:33    1  mThM.q   65-02       
+   2429288 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-02       
+   2429289 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-28       
+   2429290 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-02       
+   2429291 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   84-01       
+   2429292 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   75-05       
+   2429293 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   84-01       
+   2429294 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   75-05       
+   2429295 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-28       
+   2429296 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-25       
+   2429297 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-02       
+   2429298 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   84-01       
+   2429299 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   75-05       
+   2429300 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-09       
+   2429301 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-20       
+   2429302 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   75-05       
+   2429303 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   84-01       
+   2429304 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-28       
+   2429305 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-25       
+   2429306 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-02       
+   2429307 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   75-05       
+   2429308 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   84-01       
+   2429309 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-23       
+   2429310 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   64-17       
+   2429311 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-09       
+   2429312 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-05       
+   2429313 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-20       
+   2429314 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-26       
+   2429315 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   75-05       
+   2429316 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-30       
+   2429317 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   84-01       
+   2429318 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-28       
+   2429319 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-25       
+   2429320 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-14       
+   2429321 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-02       
+   2429322 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-16       
+   2429323 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   75-05       
+   2429324 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-23       
+   2429325 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   75-05       
+   2429326 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-19       
+   2429327 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   84-01       
+   2429328 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-09       
+   2429329 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-05       
+   2429330 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-20       
+   2429331 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-13       
+   2429332 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-15       
+   2429333 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-26       
+   2429334 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   65-30       
+   2429335 grandis_oneAust                                            gresse          06/27 01:42    1  mThM.q   75-05       
+   2435974 KB210690_1                                                 ingushin        06/27 12:23    1  mThC.q   65-09       
+   2435975 KB210690_2                                                 ingushin        06/27 12:23    1  mThC.q   65-09       
+   2435976 KB210690_3                                                 ingushin        06/27 12:23    1  mThC.q   65-21       
+   2435977 KB210690_4                                                 ingushin        06/27 12:23    1  mThC.q   65-09       
+   2435978 KB210690_5                                                 ingushin        06/27 12:23    1  mThC.q   65-21       
+   2435979 KB210690_6                                                 ingushin        06/27 12:23    1  mThC.q   65-09       
+   2435980 KB210690_7                                                 ingushin        06/27 12:23    1  mThC.q   65-21       
+   2435981 KB210690_8                                                 ingushin        06/27 12:23    1  mThC.q   65-09       
+   2435982 KB210690_9                                                 ingushin        06/27 12:23    1  mThC.q   65-21       
+   2435983 KB210690_10                                                ingushin        06/27 12:23    1  mThC.q   65-09       
+   2435984 KB210690_11                                                ingushin        06/27 12:23    1  mThC.q   65-21       
+   2435985 KB210690_12                                                ingushin        06/27 12:23    1  mThC.q   64-10       
+   2435986 KB210690_13                                                ingushin        06/27 12:23    1  mThC.q   65-09       
+   2435987 KB210690_14                                                ingushin        06/27 12:23    1  mThC.q   65-21       
+   2435988 KB210690_15                                                ingushin        06/27 12:23    1  mThC.q   64-09       
+   2435989 KB210690_16                                                ingushin        06/27 12:23    1  mThC.q   64-10       
+   2435990 KB210690_17                                                ingushin        06/27 12:23    1  mThC.q   65-27       
+   2435991 KB210690_18                                                ingushin        06/27 12:23    1  mThC.q   93-04       
+   2435992 KB210690_19                                                ingushin        06/27 12:23    1  mThC.q   65-09       
+   2435993 KB210690_20                                                ingushin        06/27 12:23    1  mThC.q   65-21       
+   2435994 KB210690_21                                                ingushin        06/27 12:23    1  mThC.q   65-22       
+   2435995 KB210690_22                                                ingushin        06/27 12:23    1  mThC.q   76-11       
+   2435996 KB210690_23                                                ingushin        06/27 12:23    1  mThC.q   65-20       
+   2435997 KB210690_24                                                ingushin        06/27 12:23    1  mThC.q   65-11       
+   2435998 KB210690_25                                                ingushin        06/27 12:23    1  mThC.q   64-07       
+   2435999 KB210690_26                                                ingushin        06/27 12:23    1  mThC.q   76-04       
+   2436000 KB210690_27                                                ingushin        06/27 12:23    1  mThC.q   76-07       
+   2436001 KB210690_28                                                ingushin        06/27 12:23    1  mThC.q   65-27       
+   2436002 KB210690_29                                                ingushin        06/27 12:23    1  mThC.q   65-09       
+   2436003 KB210690_30                                                ingushin        06/27 12:23    1  mThC.q   76-11       
+   2436004 KB210690_31                                                ingushin        06/27 12:23    1  mThC.q   65-22       
+   2436005 KB210690_32                                                ingushin        06/27 12:23    1  mThC.q   65-18       
+   2436006 KB210690_33                                                ingushin        06/27 12:23    1  mThC.q   65-21       
+   2436007 KB210690_34                                                ingushin        06/27 12:23    1  mThC.q   76-04       
+   2436008 KB210690_35                                                ingushin        06/27 12:23    1  mThC.q   76-05       
+   2436009 KB210690_36                                                ingushin        06/27 12:23    1  mThC.q   93-02       
+   2436010 KB210690_37                                                ingushin        06/27 12:23    1  mThC.q   76-07       
+   2436011 KB210690_38                                                ingushin        06/27 12:23    1  mThC.q   64-09       
+   2436012 KB210690_39                                                ingushin        06/27 12:23    1  mThC.q   65-11       
+   2436013 KB210690_40                                                ingushin        06/27 12:23    1  mThC.q   76-08       
+   2436014 KB210690_41                                                ingushin        06/27 12:23    1  mThC.q   76-08       
+   2436015 KB210690_42                                                ingushin        06/27 12:23    1  mThC.q   64-14       
+   2436016 KB210690_43                                                ingushin        06/27 12:23    1  mThC.q   64-10       
+   2436017 KB210690_44                                                ingushin        06/27 12:23    1  mThC.q   76-11       
+   2436018 KB210690_45                                                ingushin        06/27 12:23    1  mThC.q   65-10       
+   2436019 KB210690_46                                                ingushin        06/27 12:23    1  mThC.q   65-20       
+   2436020 KB210690_47                                                ingushin        06/27 12:23    1  mThC.q   76-04       
+   2436021 KB210690_48                                                ingushin        06/27 12:23    1  mThC.q   76-05       
+   2436022 KB210690_49                                                ingushin        06/27 12:23    1  mThC.q   65-13       
+   2436023 KB210690_50                                                ingushin        06/27 12:23    1  mThC.q   76-08       
+   2436024 KB210690_51                                                ingushin        06/27 12:23    1  mThC.q   76-07       
+   2436025 KB210690_52                                                ingushin        06/27 12:23    1  mThC.q   65-27       
+   2436026 KB210690_53                                                ingushin        06/27 12:23    1  mThC.q   75-02       
+   2436027 KB210690_54                                                ingushin        06/27 12:23    1  mThC.q   76-05       
+   2436028 KB210690_55                                                ingushin        06/27 12:23    1  mThC.q   76-05       
+   2436029 KB210690_56                                                ingushin        06/27 12:23    1  mThC.q   76-05       
+   2436030 KB210690_57                                                ingushin        06/27 12:23    1  mThC.q   76-05       
+   2436031 KB210690_58                                                ingushin        06/27 12:23    1  mThC.q   76-05       
+   2436032 KB210690_59                                                ingushin        06/27 12:23    1  mThC.q   64-07       
+   2436033 KB210690_60                                                ingushin        06/27 12:23    1  mThC.q   64-07       
+   2436034 KB210690_61                                                ingushin        06/27 12:23    1  mThC.q   64-07       
+   2436035 KB210690_62                                                ingushin        06/27 12:23    1  mThC.q   64-07       
+   2436036 KB210690_63                                                ingushin        06/27 12:23    1  mThC.q   64-07       
+   2436037 KB210690_64                                                ingushin        06/27 12:23    1  mThC.q   64-07       
+   2436038 KB210690_65                                                ingushin        06/27 12:23    1  mThC.q   76-05       
+   2436039 KB210690_66                                                ingushin        06/27 12:23    1  mThC.q   76-11       
+   2436040 KB210690_67                                                ingushin        06/27 12:23    1  mThC.q   76-04       
+   2436041 KB210690_68                                                ingushin        06/27 12:23    1  mThC.q   93-01       
+   2436042 KB210690_69                                                ingushin        06/27 12:23    1  mThC.q   93-02       
+   2436043 KB210690_70                                                ingushin        06/27 12:23    1  mThC.q   65-25       
+   2436044 KB210690_71                                                ingushin        06/27 12:23    1  mThC.q   65-22       
+   2436045 KB210690_72                                                ingushin        06/27 12:23    1  mThC.q   76-08       
+   2436046 KB210690_73                                                ingushin        06/27 12:23    1  mThC.q   76-11       
+   2436047 KB210690_74                                                ingushin        06/27 12:23    1  mThC.q   76-11       
+   2436048 KB210690_75                                                ingushin        06/27 12:23    1  mThC.q   76-11       
+   2436049 KB210690_76                                                ingushin        06/27 12:23    1  mThC.q   76-11       
+   2436050 KB210690_77                                                ingushin        06/27 12:23    1  mThC.q   65-02       
+   2436051 KB210690_78                                                ingushin        06/27 12:23    1  mThC.q   65-18       
+   2436052 KB210690_79                                                ingushin        06/27 12:23    1  mThC.q   65-03       
+   2436053 KB210690_80                                                ingushin        06/27 12:23    1  mThC.q   65-23       
+   2436054 KB210690_81                                                ingushin        06/27 12:23    1  mThC.q   64-07       
+   2436055 KB210690_82                                                ingushin        06/27 12:23    1  mThC.q   65-11       
+   2436056 KB210690_83                                                ingushin        06/27 12:23    1  mThC.q   65-21       
+   2436057 KB210690_84                                                ingushin        06/27 12:23    1  mThC.q   76-05       
+   2436058 KB210690_85                                                ingushin        06/27 12:23    1  mThC.q   76-13       
+   2436059 KB210690_86                                                ingushin        06/27 12:23    1  mThC.q   76-04       
+   2436060 KB210690_87                                                ingushin        06/27 12:23    1  mThC.q   76-07       
+   2436061 KB210690_88                                                ingushin        06/27 12:23    1  mThC.q   65-09       
+   2436062 KB210690_89                                                ingushin        06/27 12:23    1  mThC.q   65-16       
+   2436063 KB210690_90                                                ingushin        06/27 12:23    1  mThC.q   65-16       
+   2436064 KB210690_91                                                ingushin        06/27 12:23    1  mThC.q   75-02       
+   2436065 KB210690_92                                                ingushin        06/27 12:23    1  mThC.q   65-20       
+   2436066 KB210690_93                                                ingushin        06/27 12:23    1  mThC.q   65-28       
+   2436067 KB210690_94                                                ingushin        06/27 12:23    1  mThC.q   76-08       
+   2436068 KB210690_95                                                ingushin        06/27 12:23    1  mThC.q   76-11       
+   2436069 KB210690_96                                                ingushin        06/27 12:23    1  mThC.q   65-30       
+   2436070 KB210690_97                                                ingushin        06/27 12:23    1  mThC.q   76-06       
+   2436071 KB210690_98                                                ingushin        06/27 12:23    1  mThC.q   64-11       
+   2436072 KB210690_99                                                ingushin        06/27 12:23    1  mThC.q   75-04       
+   2436073 KB210690_100                                               ingushin        06/27 12:23    1  mThC.q   65-27       
+   2436074 KB210690_101                                               ingushin        06/27 12:23    1  mThC.q   65-13       
+   2436075 KB210690_102                                               ingushin        06/27 12:23    1  mThC.q   76-05       
+   2436076 KB210690_103                                               ingushin        06/27 12:23    1  mThC.q   76-04       
+   2436077 KB210690_104                                               ingushin        06/27 12:23    1  mThC.q   75-04       
+   2436078 KB210690_105                                               ingushin        06/27 12:23    1  mThC.q   75-04       
+   2436079 KB210690_106                                               ingushin        06/27 12:23    1  mThC.q   75-04       
+   2436080 KB210690_107                                               ingushin        06/27 12:23    1  mThC.q   65-11       
+   2436081 KB210690_108                                               ingushin        06/27 12:23    1  mThC.q   65-11       
+   2436082 KB210690_109                                               ingushin        06/27 12:23    1  mThC.q   65-11       
+   2436083 KB210690_110                                               ingushin        06/27 12:23    1  mThC.q   65-11       
+   2436084 KB210690_111                                               ingushin        06/27 12:23    1  mThC.q   65-11       
+   2436085 KB210690_112                                               ingushin        06/27 12:23    1  mThC.q   65-11       
+   2436086 KB210690_113                                               ingushin        06/27 12:23    1  mThC.q   75-04       
+   2436087 KB210690_114                                               ingushin        06/27 12:23    1  mThC.q   65-20       
+   2436088 KB210690_115                                               ingushin        06/27 12:23    1  mThC.q   75-04       
+   2436089 KB210690_116                                               ingushin        06/27 12:23    1  mThC.q   65-11       
+   2436090 KB210690_117                                               ingushin        06/27 12:23    1  mThC.q   93-02       
+   2436091 KB210690_118                                               ingushin        06/27 12:23    1  mThC.q   64-10       
+   2436092 KB210690_119                                               ingushin        06/27 12:23    1  mThC.q   93-01       
+   2436093 KB210690_120                                               ingushin        06/27 12:23    1  mThC.q   75-04       
+   2436094 KB210690_121                                               ingushin        06/27 12:23    1  mThC.q   64-14       
+   2436095 KB210690_122                                               ingushin        06/27 12:23    1  mThC.q   76-08       
+   2436096 KB210690_123                                               ingushin        06/27 12:23    1  mThC.q   65-10       
+   2436097 KB210690_124                                               ingushin        06/27 12:23    1  mThC.q   76-07       
+   2436098 KB210690_125                                               ingushin        06/27 12:23    1  mThC.q   76-06       
+   2436099 KB210690_126                                               ingushin        06/27 12:23    1  mThC.q   75-02       
+   2436100 KB210690_127                                               ingushin        06/27 12:23    1  mThC.q   65-30       
+   2436101 KB210690_128                                               ingushin        06/27 12:23    1  mThC.q   76-11       
+   2436102 KB210690_129                                               ingushin        06/27 12:23    1  mThC.q   65-22       
+   2436103 KB210690_130                                               ingushin        06/27 12:23    1  mThC.q   76-04       
+   2436104 KB210690_131                                               ingushin        06/27 12:23    1  mThC.q   65-02       
+   2436105 KB210690_132                                               ingushin        06/27 12:23    1  mThC.q   65-03       
+   2436106 KB210690_133                                               ingushin        06/27 12:23    1  mThC.q   93-03       
+   2436107 KB210690_134                                               ingushin        06/27 12:23    1  mThC.q   65-25       
+   2436108 KB210690_135                                               ingushin        06/27 12:23    1  mThC.q   76-13       
+   2436109 KB210690_136                                               ingushin        06/27 12:23    1  mThC.q   65-23       
+   2436110 KB210690_137                                               ingushin        06/27 12:23    1  mThC.q   64-08       
+   2436111 KB210690_138                                               ingushin        06/27 12:23    1  mThC.q   65-27       
+   2436112 KB210690_139                                               ingushin        06/27 12:23    1  mThC.q   84-01       
+   2436113 KB210690_140                                               ingushin        06/27 12:23    1  mThC.q   65-16       
+   2436114 KB210690_141                                               ingushin        06/27 12:23    1  mThC.q   65-14       
+   2436115 KB210690_142                                               ingushin        06/27 12:23    1  mThC.q   76-06       
+   2436116 KB210690_143                                               ingushin        06/27 12:23    1  mThC.q   75-04       
+   2436117 KB210690_144                                               ingushin        06/27 12:23    1  mThC.q   93-02       
+   2436118 KB210690_145                                               ingushin        06/27 12:23    1  mThC.q   76-04       
+   2436119 KB210690_146                                               ingushin        06/27 12:23    1  mThC.q   76-05       
+   2436120 KB210690_147                                               ingushin        06/27 12:23    1  mThC.q   65-09       
+   2436121 KB210690_148                                               ingushin        06/27 12:23    1  mThC.q   76-07       
+   2436122 KB210690_149                                               ingushin        06/27 12:23    1  mThC.q   76-11       
+   2436123 KB210690_150                                               ingushin        06/27 12:23    1  mThC.q   93-01       
+   2436124 KB210690_151                                               ingushin        06/27 12:23    1  mThC.q   65-28       
+   2436125 KB210690_152                                               ingushin        06/27 12:23    1  mThC.q   65-11       
+   2436126 KB210690_153                                               ingushin        06/27 12:23    1  mThC.q   65-05       
+   2436127 KB210690_154                                               ingushin        06/27 12:23    1  mThC.q   65-21       
+   2436128 KB210690_155                                               ingushin        06/27 12:23    1  mThC.q   65-18       
+   2436129 KB210690_156                                               ingushin        06/27 12:23    1  mThC.q   64-09       
+   2436130 KB210690_157                                               ingushin        06/27 12:23    1  mThC.q   64-06       
+   2436131 KB210690_158                                               ingushin        06/27 12:23    1  mThC.q   64-07       
+   2436132 KB210690_159                                               ingushin        06/27 12:23    1  mThC.q   76-13       
+   2436133 KB210690_160                                               ingushin        06/27 12:23    1  mThC.q   76-08       
+   2436134 KB210690_161                                               ingushin        06/27 12:23    1  mThC.q   76-06       
+   2436135 KB210690_162                                               ingushin        06/27 12:23    1  mThC.q   76-04       
+   2436136 KB210690_163                                               ingushin        06/27 12:23    1  mThC.q   75-02       
+   2436137 KB210690_164                                               ingushin        06/27 12:23    1  mThC.q   76-10       
+   2436138 KB210690_165                                               ingushin        06/27 12:23    1  mThC.q   75-04       
+   2436139 KB210690_166                                               ingushin        06/27 12:24    1  mThC.q   65-03       
+   2436140 KB210690_167                                               ingushin        06/27 12:24    1  mThC.q   65-20       
+   2436141 KB210690_168                                               ingushin        06/27 12:24    1  mThC.q   65-10       
+   2436142 KB210690_169                                               ingushin        06/27 12:24    1  mThC.q   93-03       
+   2436143 KB210690_170                                               ingushin        06/27 12:24    1  mThC.q   65-02       
+   2436144 KB210690_171                                               ingushin        06/27 12:24    1  mThC.q   76-07       
+   2436145 KB210690_172                                               ingushin        06/27 12:24    1  mThC.q   75-01       
+   2436146 KB210690_173                                               ingushin        06/27 12:24    1  mThC.q   65-27       
+   2436147 KB210690_174                                               ingushin        06/27 12:24    1  mThC.q   65-22       
+   2436148 KB210690_175                                               ingushin        06/27 12:24    1  mThC.q   76-13       
+   2436149 KB210690_176                                               ingushin        06/27 12:24    1  mThC.q   76-07       
+   2436150 KB210690_177                                               ingushin        06/27 12:24    1  mThC.q   76-07       
+   2436151 KB210690_178                                               ingushin        06/27 12:24    1  mThC.q   76-07       
+   2436152 KB210690_179                                               ingushin        06/27 12:24    1  mThC.q   76-07       
+   2436153 KB210690_180                                               ingushin        06/27 12:24    1  mThC.q   76-07       
+   2436154 KB210690_181                                               ingushin        06/27 12:24    1  mThC.q   76-07       
+   2436155 KB210690_182                                               ingushin        06/27 12:24    1  mThC.q   65-30       
+   2436156 KB210690_183                                               ingushin        06/27 12:24    1  mThC.q   64-11       
+   2436157 KB210690_184                                               ingushin        06/27 12:24    1  mThC.q   64-10       
+   2436158 KB210690_185                                               ingushin        06/27 12:24    1  mThC.q   76-06       
+   2436159 KB210690_186                                               ingushin        06/27 12:24    1  mThC.q   76-05       
+   2436160 KB210690_187                                               ingushin        06/27 12:24    1  mThC.q   76-05       
+   2436161 KB210690_188                                               ingushin        06/27 12:24    1  mThC.q   76-05       
+   2436162 KB210690_189                                               ingushin        06/27 12:24    1  mThC.q   76-05       
+   2436163 KB210690_190                                               ingushin        06/27 12:24    1  mThC.q   65-16       
+   2436164 KB210690_191                                               ingushin        06/27 12:24    1  mThC.q   76-05       
+   2436165 KB210690_192                                               ingushin        06/27 12:24    1  mThC.q   76-08       
+   2436166 KB210690_193                                               ingushin        06/27 12:24    1  mThC.q   76-05       
+   2436167 KB210690_194                                               ingushin        06/27 12:24    1  mThC.q   65-09       
+   2436168 KB210690_195                                               ingushin        06/27 12:24    1  mThC.q   65-23       
+   2436169 KB210690_196                                               ingushin        06/27 12:24    1  mThC.q   93-01       
+   2436170 KB210690_197                                               ingushin        06/27 12:24    1  mThC.q   84-01       
+   2436171 KB210690_198                                               ingushin        06/27 12:24    1  mThC.q   65-14       
+   2436172 KB210690_199                                               ingushin        06/27 12:24    1  mThC.q   65-25       
+   2436173 KB210690_200                                               ingushin        06/27 12:24    1  mThC.q   93-02       
+   2437614 nf-runPSMC_(7)                                             campanam        06/27 18:56    1  mThM.q   65-22       
+   2437615 nf-runPSMC_(1)                                             campanam        06/27 18:56    1  mThM.q   65-13       
+   2437617 nf-runPSMC_(8)                                             campanam        06/27 18:56    1  mThM.q   65-13       
+   2437618 nf-runPSMC_(6)                                             campanam        06/27 18:56    1  mThM.q   64-17       
+   2437619 nf-runPSMC_(5)                                             campanam        06/27 18:56    1  mThM.q   93-03       
+   2437621 nf-runPSMC_(3)                                             campanam        06/27 18:56    1  mThM.q   93-03       
+   2437628 nf-runPSMC_(9)                                             campanam        06/27 18:56    1  mThM.q   65-24       
+   2437630 nf-runPSMC_(10)                                            campanam        06/27 18:56    1  mThM.q   65-17       
+   2437633 nf-runPSMC_(11)                                            campanam        06/27 18:56    1  mThM.q   65-28       
+   2437634 nf-runPSMC_(12)                                            campanam        06/27 18:56    1  mThM.q   93-01       
+   2437636 nf-runPSMC_(13)                                            campanam        06/27 18:56    1  mThM.q   64-18       
+   2437764 tinytestToNCBI                                             pappalardop     06/27 19:35    1  mThM.q   65-26       
+   2438200 FossRate_37_Intervals_SimpleRandom_operator                spasojevict     06/28 03:09    1  lThM.q   64-17       
+   2438201 FossRate_37_Intervals_SimpleRandom_operator                spasojevict     06/28 03:11    1  lThM.q   93-04       
+   2438209 FossRate_37_Intervals_SimpleRandom_operator                spasojevict     06/28 03:35    1  lThM.q   64-18       
+   2343791 kb1689                                                     jyee            06/22 21:23    1  mThC.q   65-29   7721
+   2343791 kb1689                                                     jyee            06/22 22:33    1  mThC.q   76-11   8761
+   2343791 kb1689                                                     jyee            06/22 22:34    1  mThC.q   65-12   8781
+   2343791 kb1689                                                     jyee            06/23 01:06    1  mThC.q   65-26  10401
+   2343791 kb1689                                                     jyee            06/23 01:48    1  mThC.q   65-15  11021
+   2343791 kb1689                                                     jyee            06/23 03:56    1  mThC.q   64-03  12181
+   2343791 kb1689                                                     jyee            06/23 04:42    1  mThC.q   65-26  12741
+   2343791 kb1689                                                     jyee            06/23 05:31    1  mThC.q   93-04  13361
+   2343791 kb1689                                                     jyee            06/23 08:32    1  mThC.q   65-10  15221
+   2343791 kb1689                                                     jyee            06/23 10:04    1  mThC.q   64-08  16401
+   2343791 kb1689                                                     jyee            06/23 12:19    1  mThC.q   65-30  18661
+   2343791 kb1689                                                     jyee            06/23 12:47    1  mThC.q   65-06  18881
+   2343791 kb1689                                                     jyee            06/23 12:51    1  mThC.q   65-30  18981
+   2343791 kb1689                                                     jyee            06/23 13:42    1  mThC.q   84-01  19801
+   2343791 kb1689                                                     jyee            06/23 14:05    1  mThC.q   65-21  20081
+   2343791 kb1689                                                     jyee            06/23 15:30    1  mThC.q   65-05  21281
+   2343791 kb1689                                                     jyee            06/23 15:38    1  mThC.q   65-05  21341
+   2343791 kb1689                                                     jyee            06/23 16:23    1  mThC.q   76-07  22021
+   2343791 kb1689                                                     jyee            06/23 16:23    1  mThC.q   76-07  22041
+   2343791 kb1689                                                     jyee            06/23 17:18    1  mThC.q   75-04  22721
+   2343791 kb1689                                                     jyee            06/23 19:24    1  mThC.q   65-14  24341
+   2343791 kb1689                                                     jyee            06/23 19:28    1  mThC.q   65-14  24361
+   2343791 kb1689                                                     jyee            06/23 19:34    1  mThC.q   65-14  24421
+   2343791 kb1689                                                     jyee            06/23 20:23    1  mThC.q   64-11  25161
+   2343791 kb1689                                                     jyee            06/23 20:27    1  mThC.q   93-02  25241
+   2343791 kb1689                                                     jyee            06/23 21:12    1  mThC.q   65-19  26081
+   2343791 kb1689                                                     jyee            06/23 21:13    1  mThC.q   64-03  26101
+   2343791 kb1689                                                     jyee            06/23 22:11    1  mThC.q   65-23  26861
+   2343791 kb1689                                                     jyee            06/23 22:20    1  mThC.q   65-18  26921
+   2343791 kb1689                                                     jyee            06/23 22:22    1  mThC.q   75-04  26941
+   2343791 kb1689                                                     jyee            06/23 22:30    1  mThC.q   65-26  27041
+   2343791 kb1689                                                     jyee            06/23 23:14    1  mThC.q   64-08  27681
+   2343791 kb1689                                                     jyee            06/23 23:14    1  mThC.q   76-11  27701
+   2343791 kb1689                                                     jyee            06/23 23:15    1  mThC.q   65-23  27721
+   2343791 kb1689                                                     jyee            06/23 23:17    1  mThC.q   65-23  27741
+   2343791 kb1689                                                     jyee            06/23 23:24    1  mThC.q   65-19  27761
+   2343791 kb1689                                                     jyee            06/23 23:30    1  mThC.q   64-03  27841
+   2343791 kb1689                                                     jyee            06/24 00:37    1  mThC.q   65-28  28501
+   2343791 kb1689                                                     jyee            06/24 00:41    1  mThC.q   65-28  28521
+   2343791 kb1689                                                     jyee            06/24 00:41    1  mThC.q   65-03  28541
+   2343791 kb1689                                                     jyee            06/24 00:43    1  mThC.q   75-02  28581
+   2343791 kb1689                                                     jyee            06/24 00:49    1  mThC.q   65-29  28641
+   2343791 kb1689                                                     jyee            06/24 01:37    1  mThC.q   64-12  29321
+   2343791 kb1689                                                     jyee            06/24 01:41    1  mThC.q   64-14  29361
+   2343791 kb1689                                                     jyee            06/24 01:47    1  mThC.q   75-04  29441
+   2343791 kb1689                                                     jyee            06/24 02:53    1  mThC.q   65-29  30121
+   2343791 kb1689                                                     jyee            06/24 02:53    1  mThC.q   65-10  30141
+   2343791 kb1689                                                     jyee            06/24 02:54    1  mThC.q   65-04  30161
+   2343791 kb1689                                                     jyee            06/24 02:54    1  mThC.q   65-29  30181
+   2343791 kb1689                                                     jyee            06/24 03:01    1  mThC.q   65-10  30261
+   2343791 kb1689                                                     jyee            06/24 03:05    1  mThC.q   64-07  30281
+   2343791 kb1689                                                     jyee            06/24 03:40    1  mThC.q   65-14  30661
+   2343791 kb1689                                                     jyee            06/24 03:50    1  mThC.q   65-30  30781
+   2343791 kb1689                                                     jyee            06/24 03:54    1  mThC.q   76-13  30901
+   2343791 kb1689                                                     jyee            06/24 03:54    1  mThC.q   93-01  30921
+   2343791 kb1689                                                     jyee            06/24 03:58    1  mThC.q   65-23  30941
+   2343791 kb1689                                                     jyee            06/24 04:02    1  mThC.q   65-23  30981
+   2343791 kb1689                                                     jyee            06/24 04:07    1  mThC.q   65-10  31061
+   2343791 kb1689                                                     jyee            06/24 05:04    1  mThC.q   65-18  31661
+   2343791 kb1689                                                     jyee            06/24 05:05    1  mThC.q   75-02  31681
+   2343791 kb1689                                                     jyee            06/24 05:08    1  mThC.q   65-12  31721
+   2343791 kb1689                                                     jyee            06/24 05:08    1  mThC.q   65-14  31741
+   2343791 kb1689                                                     jyee            06/24 05:09    1  mThC.q   64-07  31761
+   2343791 kb1689                                                     jyee            06/24 05:09    1  mThC.q   64-14  31801
+   2343791 kb1689                                                     jyee            06/24 05:11    1  mThC.q   65-16  31821
+   2343791 kb1689                                                     jyee            06/24 05:49    1  mThC.q   76-07  32341
+   2343791 kb1689                                                     jyee            06/24 05:52    1  mThC.q   64-07  32361
+   2343791 kb1689                                                     jyee            06/24 05:56    1  mThC.q   65-22  32401
+   2343791 kb1689                                                     jyee            06/24 06:00    1  mThC.q   75-04  32441
+   2343791 kb1689                                                     jyee            06/24 06:03    1  mThC.q   65-06  32481
+   2343791 kb1689                                                     jyee            06/24 06:35    1  mThC.q   76-06  32901
+   2343791 kb1689                                                     jyee            06/24 06:43    1  mThC.q   76-06  33041
+   2343791 kb1689                                                     jyee            06/24 06:44    1  mThC.q   76-06  33061
+   2343791 kb1689                                                     jyee            06/24 06:46    1  mThC.q   65-02  33081
+   2343791 kb1689                                                     jyee            06/24 06:52    1  mThC.q   65-14  33161
+   2343791 kb1689                                                     jyee            06/24 07:34    1  mThC.q   64-05  33641
+   2343791 kb1689                                                     jyee            06/24 07:45    1  mThC.q   65-19  33721
+   2343791 kb1689                                                     jyee            06/24 07:46    1  mThC.q   65-06  33741
+   2343791 kb1689                                                     jyee            06/24 07:47    1  mThC.q   65-02  33761
+   2343791 kb1689                                                     jyee            06/24 07:57    1  mThC.q   65-02  33801
+   2343791 kb1689                                                     jyee            06/24 07:58    1  mThC.q   93-01  33841
+   2343791 kb1689                                                     jyee            06/24 08:32    1  mThC.q   65-16  34041
+   2343791 kb1689                                                     jyee            06/24 08:51    1  mThC.q   65-30  34281
+   2343791 kb1689                                                     jyee            06/24 09:13    1  mThC.q   65-27  34421
+   2343791 kb1689                                                     jyee            06/24 09:16    1  mThC.q   65-24  34441
+   2343791 kb1689                                                     jyee            06/24 09:26    1  mThC.q   76-11  34501
+   2343791 kb1689                                                     jyee            06/24 09:32    1  mThC.q   65-24  34541
+   2343791 kb1689                                                     jyee            06/24 09:38    1  mThC.q   65-26  34561
+   2343791 kb1689                                                     jyee            06/24 09:40    1  mThC.q   76-07  34621
+   2343791 kb1689                                                     jyee            06/24 10:41    1  mThC.q   76-08  35041
+   2343791 kb1689                                                     jyee            06/24 10:58    1  mThC.q   64-11  35081
+   2343791 kb1689                                                     jyee            06/24 10:59    1  mThC.q   64-04  35101
+   2343791 kb1689                                                     jyee            06/24 11:13    1  mThC.q   64-14  35121
+   2343791 kb1689                                                     jyee            06/24 11:18    1  mThC.q   64-14  35141
+   2343791 kb1689                                                     jyee            06/24 11:24    1  mThC.q   64-12  35161
+   2343791 kb1689                                                     jyee            06/24 11:30    1  mThC.q   64-11  35181
+   2343791 kb1689                                                     jyee            06/24 11:39    1  mThC.q   65-30  35321
+   2343791 kb1689                                                     jyee            06/24 11:45    1  mThC.q   65-11  35341
+   2343791 kb1689                                                     jyee            06/24 11:58    1  mThC.q   65-27  35521
+   2343791 kb1689                                                     jyee            06/24 12:09    1  mThC.q   65-14  35641
+   2343791 kb1689                                                     jyee            06/24 12:20    1  mThC.q   76-07  35681
+   2343791 kb1689                                                     jyee            06/24 12:22    1  mThC.q   76-08  35701
+   2343791 kb1689                                                     jyee            06/24 12:30    1  mThC.q   76-11  35721
+   2343791 kb1689                                                     jyee            06/24 12:31    1  mThC.q   65-30  35741
+   2343791 kb1689                                                     jyee            06/24 12:32    1  mThC.q   76-11  35761
+   2343791 kb1689                                                     jyee            06/24 12:35    1  mThC.q   65-28  35781
+   2343791 kb1689                                                     jyee            06/24 12:35    1  mThC.q   64-03  35801
+   2343791 kb1689                                                     jyee            06/24 12:51    1  mThC.q   65-30  35921
+   2343791 kb1689                                                     jyee            06/24 13:02    1  mThC.q   75-04  36061
+   2343791 kb1689                                                     jyee            06/24 13:10    1  mThC.q   64-12  36121
+   2343791 kb1689                                                     jyee            06/24 13:26    1  mThC.q   76-11  36241
+   2343791 kb1689                                                     jyee            06/24 13:28    1  mThC.q   64-12  36261
+   2343791 kb1689                                                     jyee            06/24 13:31    1  mThC.q   65-30  36281
+   2343791 kb1689                                                     jyee            06/24 13:32    1  mThC.q   65-30  36301
+   2343791 kb1689                                                     jyee            06/24 13:51    1  mThC.q   64-08  36421
+   2343791 kb1689                                                     jyee            06/24 13:52    1  mThC.q   64-08  36461
+   2343791 kb1689                                                     jyee            06/24 14:18    1  mThC.q   76-06  36641
+   2343791 kb1689                                                     jyee            06/24 14:33    1  mThC.q   65-27  36681
+   2343791 kb1689                                                     jyee            06/24 15:22    1  mThC.q   65-16  36861
+   2343791 kb1689                                                     jyee            06/24 15:28    1  mThC.q   76-06  36881
+   2343791 kb1689                                                     jyee            06/24 15:40    1  mThC.q   76-06  36921
+   2343791 kb1689                                                     jyee            06/24 15:45    1  mThC.q   93-02  36941
+   2343791 kb1689                                                     jyee            06/24 15:50    1  mThC.q   65-14  36961
+   2343791 kb1689                                                     jyee            06/24 15:51    1  mThC.q   76-07  36981
+   2343791 kb1689                                                     jyee            06/24 15:52    1  mThC.q   65-23  37001
+   2343791 kb1689                                                     jyee            06/24 15:59    1  mThC.q   76-08  37021
+   2343791 kb1689                                                     jyee            06/24 16:02    1  mThC.q   65-25  37041
+   2343791 kb1689                                                     jyee            06/24 16:03    1  mThC.q   65-27  37061
+   2343791 kb1689                                                     jyee            06/24 16:12    1  mThC.q   76-07  37101
+   2343791 kb1689                                                     jyee            06/24 16:19    1  mThC.q   65-13  37141
+   2343791 kb1689                                                     jyee            06/24 17:07    1  mThC.q   76-06  37341
+   2343791 kb1689                                                     jyee            06/24 17:11    1  mThC.q   93-02  37361
+   2343791 kb1689                                                     jyee            06/24 17:16    1  mThC.q   65-23  37381
+   2343791 kb1689                                                     jyee            06/24 17:18    1  mThC.q   75-04  37401
+   2343791 kb1689                                                     jyee            06/24 17:22    1  mThC.q   64-05  37441
+   2343791 kb1689                                                     jyee            06/24 17:28    1  mThC.q   76-06  37481
+   2343791 kb1689                                                     jyee            06/24 17:29    1  mThC.q   65-30  37501
+   2343791 kb1689                                                     jyee            06/24 17:35    1  mThC.q   76-08  37521
+   2343791 kb1689                                                     jyee            06/24 17:39    1  mThC.q   65-23  37581
+   2343791 kb1689                                                     jyee            06/24 17:40    1  mThC.q   76-06  37601
+   2343791 kb1689                                                     jyee            06/24 17:41    1  mThC.q   65-14  37621
+   2343791 kb1689                                                     jyee            06/24 17:44    1  mThC.q   65-24  37641
+   2343791 kb1689                                                     jyee            06/24 17:47    1  mThC.q   65-28  37661
+   2343791 kb1689                                                     jyee            06/24 17:56    1  mThC.q   65-23  37701
+   2343791 kb1689                                                     jyee            06/24 18:01    1  mThC.q   64-02  37721
+   2343791 kb1689                                                     jyee            06/24 18:04    1  mThC.q   75-04  37741
+   2343791 kb1689                                                     jyee            06/24 18:28    1  mThC.q   65-07  37901
+   2343791 kb1689                                                     jyee            06/24 18:33    1  mThC.q   64-02  37941
+   2343791 kb1689                                                     jyee            06/24 18:37    1  mThC.q   64-13  38001
+   2343791 kb1689                                                     jyee            06/24 18:40    1  mThC.q   64-08  38021
+   2343791 kb1689                                                     jyee            06/24 18:43    1  mThC.q   75-04  38041
+   2343791 kb1689                                                     jyee            06/24 18:44    1  mThC.q   75-04  38061
+   2343791 kb1689                                                     jyee            06/24 18:46    1  mThC.q   65-13  38081
+   2343791 kb1689                                                     jyee            06/24 18:49    1  mThC.q   65-06  38101
+   2343791 kb1689                                                     jyee            06/24 18:50    1  mThC.q   93-03  38121
+   2343791 kb1689                                                     jyee            06/24 18:52    1  mThC.q   76-11  38141
+   2343791 kb1689                                                     jyee            06/24 19:16    1  mThC.q   93-04  38181
+   2343791 kb1689                                                     jyee            06/24 19:17    1  mThC.q   76-11  38201
+   2343791 kb1689                                                     jyee            06/24 19:21    1  mThC.q   76-06  38241
+   2343791 kb1689                                                     jyee            06/24 19:25    1  mThC.q   65-22  38261
+   2343791 kb1689                                                     jyee            06/24 19:25    1  mThC.q   65-22  38281
+   2343791 kb1689                                                     jyee            06/24 19:34    1  mThC.q   75-02  38321
+   2343791 kb1689                                                     jyee            06/24 19:41    1  mThC.q   65-02  38381
+   2343791 kb1689                                                     jyee            06/24 19:45    1  mThC.q   76-06  38401
+   2343791 kb1689                                                     jyee            06/24 20:00    1  mThC.q   65-30  38461
+   2343791 kb1689                                                     jyee            06/24 20:11    1  mThC.q   65-12  38501
+   2343791 kb1689                                                     jyee            06/24 20:12    1  mThC.q   76-06  38521
+   2343791 kb1689                                                     jyee            06/24 20:39    1  mThC.q   65-21  38561
+   2343791 kb1689                                                     jyee            06/24 20:47    1  mThC.q   65-15  38581
+   2343791 kb1689                                                     jyee            06/24 21:22    1  mThC.q   65-13  38681
+   2343791 kb1689                                                     jyee            06/24 22:15    1  mThC.q   84-01  38881
+   2343791 kb1689                                                     jyee            06/24 22:52    1  mThC.q   64-11  39001
+   2343791 kb1689                                                     jyee            06/24 23:33    1  mThC.q   64-02  39081
+   2343791 kb1689                                                     jyee            06/24 23:38    1  mThC.q   65-02  39101
+   2343791 kb1689                                                     jyee            06/25 00:01    1  mThC.q   64-02  39121
+   2343791 kb1689                                                     jyee            06/25 00:11    1  mThC.q   65-02  39161
+   2343791 kb1689                                                     jyee            06/25 00:26    1  mThC.q   65-10  39181
+   2343791 kb1689                                                     jyee            06/25 00:26    1  mThC.q   65-11  39201
+   2343791 kb1689                                                     jyee            06/25 00:59    1  mThC.q   76-09  39241
+   2343791 kb1689                                                     jyee            06/25 01:08    1  mThC.q   76-09  39281
+   2343791 kb1689                                                     jyee            06/25 01:32    1  mThC.q   76-05  39361
+   2343791 kb1689                                                     jyee            06/25 01:42    1  mThC.q   75-02  39401
+   2343791 kb1689                                                     jyee            06/25 01:53    1  mThC.q   75-02  39421
+   2343791 kb1689                                                     jyee            06/25 02:03    1  mThC.q   93-04  39441
+   2343791 kb1689                                                     jyee            06/25 02:07    1  mThC.q   93-04  39501
+   2343791 kb1689                                                     jyee            06/25 02:13    1  mThC.q   93-03  39521
+   2343791 kb1689                                                     jyee            06/25 02:26    1  mThC.q   64-02  39561
+   2343791 kb1689                                                     jyee            06/25 02:52    1  mThC.q   75-02  39621
+   2343791 kb1689                                                     jyee            06/25 03:26    1  mThC.q   75-02  39721
+   2343791 kb1689                                                     jyee            06/25 03:48    1  mThC.q   65-02  39761
+   2343791 kb1689                                                     jyee            06/25 04:00    1  mThC.q   64-02  39801
+   2343791 kb1689                                                     jyee            06/25 04:05    1  mThC.q   65-29  39821
+   2343791 kb1689                                                     jyee            06/25 04:17    1  mThC.q   65-02  39861
+   2343791 kb1689                                                     jyee            06/25 04:20    1  mThC.q   64-02  39881
+   2343791 kb1689                                                     jyee            06/25 04:30    1  mThC.q   65-15  39941
+   2343791 kb1689                                                     jyee            06/25 04:52    1  mThC.q   75-02  39961
+   2343791 kb1689                                                     jyee            06/25 05:08    1  mThC.q   65-15  39981
+   2343791 kb1689                                                     jyee            06/25 05:45    1  mThC.q   65-02  40021
+   2343791 kb1689                                                     jyee            06/25 05:55    1  mThC.q   76-05  40041
+   2343791 kb1689                                                     jyee            06/25 06:00    1  mThC.q   76-05  40061
+   2343791 kb1689                                                     jyee            06/25 06:08    1  mThC.q   76-05  40101
+   2343791 kb1689                                                     jyee            06/25 06:10    1  mThC.q   65-14  40121
+   2343791 kb1689                                                     jyee            06/25 06:27    1  mThC.q   64-13  40141
+   2343791 kb1689                                                     jyee            06/25 06:44    1  mThC.q   64-13  40181
+   2343791 kb1689                                                     jyee            06/25 06:51    1  mThC.q   64-13  40221
+   2343791 kb1689                                                     jyee            06/25 06:54    1  mThC.q   64-13  40241
+   2343791 kb1689                                                     jyee            06/25 06:56    1  mThC.q   64-13  40261
+   2343791 kb1689                                                     jyee            06/25 07:06    1  mThC.q   64-13  40281
+   2343791 kb1689                                                     jyee            06/25 07:12    1  mThC.q   64-13  40301
+   2343791 kb1689                                                     jyee            06/25 07:16    1  mThC.q   64-13  40321
+   2343791 kb1689                                                     jyee            06/25 07:24    1  mThC.q   64-13  40341
+   2343791 kb1689                                                     jyee            06/25 07:32    1  mThC.q   75-02  40361
+   2343791 kb1689                                                     jyee            06/25 07:53    1  mThC.q   75-06  40381
+   2343791 kb1689                                                     jyee            06/25 07:56    1  mThC.q   75-06  40401
+   2343791 kb1689                                                     jyee            06/25 08:17    1  mThC.q   65-21  40421
+   2343791 kb1689                                                     jyee            06/25 08:20    1  mThC.q   65-21  40441
+   2343791 kb1689                                                     jyee            06/25 08:21    1  mThC.q   65-21  40461
+   2343791 kb1689                                                     jyee            06/25 08:45    1  mThC.q   65-21  40501
+   2343791 kb1689                                                     jyee            06/25 08:55    1  mThC.q   75-06  40521
+   2343791 kb1689                                                     jyee            06/25 08:55    1  mThC.q   75-06  40541
+   2343791 kb1689                                                     jyee            06/25 09:19    1  mThC.q   65-21  40581
+   2343791 kb1689                                                     jyee            06/25 09:27    1  mThC.q   75-06  40621
+   2343791 kb1689                                                     jyee            06/25 09:27    1  mThC.q   75-06  40641
+   2343791 kb1689                                                     jyee            06/25 09:45    1  mThC.q   65-16  40681
+   2343791 kb1689                                                     jyee            06/25 09:47    1  mThC.q   65-27  40741
+   2343791 kb1689                                                     jyee            06/25 09:49    1  mThC.q   64-13  40761
+   2343791 kb1689                                                     jyee            06/25 09:54    1  mThC.q   64-13  40781
+   2343791 kb1689                                                     jyee            06/25 09:54    1  mThC.q   65-25  40801
+   2343791 kb1689                                                     jyee            06/25 10:07    1  mThC.q   76-10  40821
+   2343791 kb1689                                                     jyee            06/25 10:13    1  mThC.q   76-10  40841
+   2343791 kb1689                                                     jyee            06/25 10:14    1  mThC.q   76-10  40861
+   2343791 kb1689                                                     jyee            06/25 10:48    1  mThC.q   76-10  40901
+   2343791 kb1689                                                     jyee            06/25 10:51    1  mThC.q   65-19  40921
+   2343791 kb1689                                                     jyee            06/25 10:52    1  mThC.q   65-19  40941
+   2343791 kb1689                                                     jyee            06/25 11:07    1  mThC.q   76-10  40961
+   2343791 kb1689                                                     jyee            06/25 11:11    1  mThC.q   76-10  40981
+   2343791 kb1689                                                     jyee            06/25 11:18    1  mThC.q   65-23  41001
+   2343791 kb1689                                                     jyee            06/25 11:21    1  mThC.q   65-23  41021
+   2343791 kb1689                                                     jyee            06/25 11:25    1  mThC.q   75-01  41041
+   2343791 kb1689                                                     jyee            06/25 11:31    1  mThC.q   75-01  41081
+   2343791 kb1689                                                     jyee            06/25 11:39    1  mThC.q   75-01  41101
+   2343791 kb1689                                                     jyee            06/25 11:57    1  mThC.q   65-16  41161
+   2343791 kb1689                                                     jyee            06/25 12:39    1  mThC.q   76-07  41201
+   2343791 kb1689                                                     jyee            06/25 13:07    1  mThC.q   93-03  41261
+   2343791 kb1689                                                     jyee            06/25 13:32    1  mThC.q   93-03  41301
+   2343791 kb1689                                                     jyee            06/25 14:22    1  mThC.q   93-03  41341
+   2343791 kb1689                                                     jyee            06/25 14:38    1  mThC.q   76-10  41381
+   2343791 kb1689                                                     jyee            06/25 14:42    1  mThC.q   76-10  41401
+   2343791 kb1689                                                     jyee            06/25 14:43    1  mThC.q   76-10  41421
+   2343791 kb1689                                                     jyee            06/25 14:55    1  mThC.q   76-07  41441
+   2343791 kb1689                                                     jyee            06/25 15:14    1  mThC.q   75-04  41481
+   2343791 kb1689                                                     jyee            06/25 15:39    1  mThC.q   75-03  41521
+   2343791 kb1689                                                     jyee            06/25 16:07    1  mThC.q   65-14  41561
+   2343791 kb1689                                                     jyee            06/25 16:17    1  mThC.q   65-22  41581
+   2343791 kb1689                                                     jyee            06/25 16:54    1  mThC.q   76-10  41621
+   2343791 kb1689                                                     jyee            06/25 17:02    1  mThC.q   75-05  41641
+   2343791 kb1689                                                     jyee            06/25 17:05    1  mThC.q   65-17  41661
+   2343791 kb1689                                                     jyee            06/25 17:08    1  mThC.q   65-17  41681
+   2343791 kb1689                                                     jyee            06/25 17:11    1  mThC.q   65-17  41701
+   2343791 kb1689                                                     jyee            06/25 17:17    1  mThC.q   65-17  41721
+   2343791 kb1689                                                     jyee            06/25 17:18    1  mThC.q   65-17  41741
+   2343791 kb1689                                                     jyee            06/25 17:19    1  mThC.q   65-17  41761
+   2343791 kb1689                                                     jyee            06/25 17:26    1  mThC.q   65-17  41781
+   2343791 kb1689                                                     jyee            06/25 17:59    1  mThC.q   65-17  41801
+   2343791 kb1689                                                     jyee            06/25 18:05    1  mThC.q   65-17  41821
+   2343791 kb1689                                                     jyee            06/25 18:10    1  mThC.q   75-05  41861
+   2343791 kb1689                                                     jyee            06/25 18:20    1  mThC.q   75-05  41881
+   2343791 kb1689                                                     jyee            06/25 18:31    1  mThC.q   75-05  41901
+   2343791 kb1689                                                     jyee            06/25 18:34    1  mThC.q   75-05  41921
+   2343791 kb1689                                                     jyee            06/25 18:46    1  mThC.q   76-10  41941
+   2343791 kb1689                                                     jyee            06/25 18:54    1  mThC.q   76-10  41961
+   2343791 kb1689                                                     jyee            06/25 18:58    1  mThC.q   76-10  41981
+   2343791 kb1689                                                     jyee            06/25 19:10    1  mThC.q   65-02  42021
+   2343791 kb1689                                                     jyee            06/25 19:14    1  mThC.q   76-03  42041
+   2343791 kb1689                                                     jyee            06/25 19:34    1  mThC.q   65-13  42061
+   2343791 kb1689                                                     jyee            06/25 19:35    1  mThC.q   93-03  42081
+   2343791 kb1689                                                     jyee            06/25 19:36    1  mThC.q   93-03  42101
+   2343791 kb1689                                                     jyee            06/25 19:38    1  mThC.q   64-11  42121
+   2343791 kb1689                                                     jyee            06/25 20:03    1  mThC.q   64-10  42161
+   2343791 kb1689                                                     jyee            06/25 20:24    1  mThC.q   64-10  42181
+   2343791 kb1689                                                     jyee            06/25 20:30    1  mThC.q   64-10  42201
+   2343791 kb1689                                                     jyee            06/25 20:35    1  mThC.q   64-10  42221
+   2343791 kb1689                                                     jyee            06/25 20:43    1  mThC.q   64-10  42261
+   2343791 kb1689                                                     jyee            06/25 20:48    1  mThC.q   64-10  42281
+   2343791 kb1689                                                     jyee            06/25 20:50    1  mThC.q   64-10  42301
+   2343791 kb1689                                                     jyee            06/25 20:51    1  mThC.q   76-07  42321
+   2343791 kb1689                                                     jyee            06/25 21:00    1  mThC.q   76-07  42341
+   2343791 kb1689                                                     jyee            06/25 21:02    1  mThC.q   76-07  42361
+   2343791 kb1689                                                     jyee            06/25 21:06    1  mThC.q   64-03  42381
+   2343791 kb1689                                                     jyee            06/25 22:26    1  mThC.q   75-03  42401
+   2343791 kb1689                                                     jyee            06/25 22:35    1  mThC.q   76-09  42421
+   2343791 kb1689                                                     jyee            06/25 22:45    1  mThC.q   65-11  42441
+   2343791 kb1689                                                     jyee            06/25 22:50    1  mThC.q   64-12  42461
+   2343791 kb1689                                                     jyee            06/25 23:14    1  mThC.q   76-13  42481
+   2343791 kb1689                                                     jyee            06/25 23:56    1  mThC.q   65-15  42541
+   2343791 kb1689                                                     jyee            06/26 00:13    1  mThC.q   93-01  42581
+   2343791 kb1689                                                     jyee            06/26 00:23    1  mThC.q   93-03  42601
+   2343791 kb1689                                                     jyee            06/26 00:23    1  mThC.q   64-10  42621
+   2343791 kb1689                                                     jyee            06/26 00:28    1  mThC.q   76-07  42641
+   2343791 kb1689                                                     jyee            06/26 00:48    1  mThC.q   76-07  42661
+   2343791 kb1689                                                     jyee            06/26 00:51    1  mThC.q   76-13  42681
+   2343791 kb1689                                                     jyee            06/26 01:22    1  mThC.q   65-20  42701
+   2343791 kb1689                                                     jyee            06/26 01:54    1  mThC.q   76-13  42721
+   2343791 kb1689                                                     jyee            06/26 01:59    1  mThC.q   64-06  42741
+   2343791 kb1689                                                     jyee            06/26 02:10    1  mThC.q   65-15  42761
+   2343791 kb1689                                                     jyee            06/26 02:52    1  mThC.q   76-07  42781
+   2343791 kb1689                                                     jyee            06/26 03:00    1  mThC.q   64-03  42801
+   2343791 kb1689                                                     jyee            06/26 03:10    1  mThC.q   65-05  42821
+   2343791 kb1689                                                     jyee            06/26 03:28    1  mThC.q   65-05  42841
+   2343791 kb1689                                                     jyee            06/26 03:35    1  mThC.q   65-05  42861
+   2343791 kb1689                                                     jyee            06/26 03:55    1  mThC.q   65-05  42881
+   2343791 kb1689                                                     jyee            06/26 03:55    1  mThC.q   65-07  42901
+   2343791 kb1689                                                     jyee            06/26 03:56    1  mThC.q   65-07  42921
+   2343791 kb1689                                                     jyee            06/26 03:57    1  mThC.q   65-07  42941
+   2343791 kb1689                                                     jyee            06/26 04:03    1  mThC.q   65-05  42961
+   2343791 kb1689                                                     jyee            06/26 04:05    1  mThC.q   65-05  42981
+   2343791 kb1689                                                     jyee            06/26 04:06    1  mThC.q   65-07  43001
+   2343791 kb1689                                                     jyee            06/26 04:27    1  mThC.q   93-03  43021
+   2343791 kb1689                                                     jyee            06/26 04:28    1  mThC.q   65-05  43041
+   2343791 kb1689                                                     jyee            06/26 05:05    1  mThC.q   65-07  43061
+   2343791 kb1689                                                     jyee            06/26 05:06    1  mThC.q   65-07  43081
+   2343791 kb1689                                                     jyee            06/26 05:09    1  mThC.q   65-07  43101
+   2343791 kb1689                                                     jyee            06/26 05:14    1  mThC.q   65-07  43121
+   2343791 kb1689                                                     jyee            06/26 05:48    1  mThC.q   65-07  43141
+   2343791 kb1689                                                     jyee            06/26 06:10    1  mThC.q   65-05  43161
+   2343791 kb1689                                                     jyee            06/26 06:20    1  mThC.q   93-03  43181
+   2343791 kb1689                                                     jyee            06/26 06:25    1  mThC.q   65-05  43201
+   2343791 kb1689                                                     jyee            06/26 06:41    1  mThC.q   93-03  43221
+   2343791 kb1689                                                     jyee            06/26 06:47    1  mThC.q   93-03  43241
+   2343791 kb1689                                                     jyee            06/26 06:50    1  mThC.q   93-03  43261
+   2343791 kb1689                                                     jyee            06/26 06:53    1  mThC.q   93-03  43281
+   2343791 kb1689                                                     jyee            06/26 07:08    1  mThC.q   65-05  43301
+   2343791 kb1689                                                     jyee            06/26 07:14    1  mThC.q   76-14  43321
+   2343791 kb1689                                                     jyee            06/26 07:51    1  mThC.q   65-07  43341
+   2343791 kb1689                                                     jyee            06/26 08:04    1  mThC.q   93-03  43361
+   2343791 kb1689                                                     jyee            06/26 08:14    1  mThC.q   76-07  43381
+   2343791 kb1689                                                     jyee            06/26 08:21    1  mThC.q   65-05  43401
+   2343791 kb1689                                                     jyee            06/26 08:43    1  mThC.q   76-14  43421
+   2343791 kb1689                                                     jyee            06/26 08:48    1  mThC.q   76-07  43441
+   2343791 kb1689                                                     jyee            06/26 08:54    1  mThC.q   76-07  43461
+   2343791 kb1689                                                     jyee            06/26 09:19    1  mThC.q   65-05  43501
+   2343791 kb1689                                                     jyee            06/26 09:21    1  mThC.q   65-05  43521
+   2343791 kb1689                                                     jyee            06/26 09:27    1  mThC.q   93-03  43541
+   2343791 kb1689                                                     jyee            06/26 09:36    1  mThC.q   93-03  43561
+   2343791 kb1689                                                     jyee            06/26 10:03    1  mThC.q   76-07  43581
+   2343791 kb1689                                                     jyee            06/26 10:05    1  mThC.q   76-07  43601
+   2343791 kb1689                                                     jyee            06/26 10:21    1  mThC.q   76-07  43621
+   2343791 kb1689                                                     jyee            06/26 11:06    1  mThC.q   76-14  43641
+   2343791 kb1689                                                     jyee            06/26 12:14    1  mThC.q   65-05  43661
+   2343791 kb1689                                                     jyee            06/26 12:35    1  mThC.q   76-07  43681
+   2343791 kb1689                                                     jyee            06/26 12:36    1  mThC.q   75-03  43701
+   2343791 kb1689                                                     jyee            06/26 13:18    1  mThC.q   64-06  43721
+   2343791 kb1689                                                     jyee            06/26 13:19    1  mThC.q   64-10  43741
+   2343791 kb1689                                                     jyee            06/26 13:20    1  mThC.q   64-03  43761
+   2343791 kb1689                                                     jyee            06/26 13:22    1  mThC.q   65-21  43781
+   2343791 kb1689                                                     jyee            06/26 13:28    1  mThC.q   76-14  43801
+   2343791 kb1689                                                     jyee            06/26 13:29    1  mThC.q   84-01  43821
+   2343791 kb1689                                                     jyee            06/26 13:46    1  mThC.q   76-07  43841
+   2343791 kb1689                                                     jyee            06/26 13:48    1  mThC.q   76-14  43861
+   2343791 kb1689                                                     jyee            06/26 13:59    1  mThC.q   75-03  43881
+   2343791 kb1689                                                     jyee            06/26 14:11    1  mThC.q   76-07  43901
+   2343791 kb1689                                                     jyee            06/26 14:33    1  mThC.q   75-03  43921
+   2343791 kb1689                                                     jyee            06/26 14:46    1  mThC.q   76-06  43941
+   2343791 kb1689                                                     jyee            06/26 15:02    1  mThC.q   65-05  43961
+   2343791 kb1689                                                     jyee            06/26 15:03    1  mThC.q   65-05  43981
+   2343791 kb1689                                                     jyee            06/26 15:37    1  mThC.q   65-23  44001
+   2343791 kb1689                                                     jyee            06/26 15:40    1  mThC.q   65-28  44021
+   2343791 kb1689                                                     jyee            06/26 16:18    1  mThC.q   65-14  44041
+   2343791 kb1689                                                     jyee            06/26 16:31    1  mThC.q   75-03  44061
+   2343791 kb1689                                                     jyee            06/26 17:37    1  mThC.q   76-11  44081
+   2343791 kb1689                                                     jyee            06/26 17:52    1  mThC.q   76-11  44101
+   2343791 kb1689                                                     jyee            06/26 18:07    1  mThC.q   76-11  44121
+   2343791 kb1689                                                     jyee            06/26 18:14    1  mThC.q   76-11  44141
+   2343791 kb1689                                                     jyee            06/26 18:28    1  mThC.q   76-11  44161
+   2343791 kb1689                                                     jyee            06/26 18:50    1  mThC.q   76-11  44181
+   2343791 kb1689                                                     jyee            06/26 19:22    1  mThC.q   76-11  44201
+   2343791 kb1689                                                     jyee            06/26 19:45    1  mThC.q   76-07  44221
+   2343791 kb1689                                                     jyee            06/26 19:48    1  mThC.q   76-07  44241
+   2343791 kb1689                                                     jyee            06/26 20:23    1  mThC.q   76-07  44261
+   2343791 kb1689                                                     jyee            06/26 20:25    1  mThC.q   76-07  44281
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   76-03    101
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   76-03    471
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   65-15    771
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   76-09    781
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   76-09    871
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   65-15    951
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   65-17   1001
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   65-15   1031
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   65-26   1151
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   76-09   1231
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   75-05   1251
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   65-13   1291
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   76-09   1301
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   76-04   1321
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   65-15   1331
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   76-04   1371
+   2437917 kb0171                                                     jyee            06/27 20:07    1  mThC.q   65-15   1461
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-12     31
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-12     41
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-12     51
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-12     61
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-13    141
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-13    151
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-13    181
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-13    191
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08    201
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-13    221
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08    231
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-14    241
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-03    251
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-13    261
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08    271
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-13    291
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08    301
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-12    311
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-13    321
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-14    341
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-05    351
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-04    361
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-10    371
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08    401
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-13    441
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08    451
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-05    461
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-04    471
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-10    481
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-26    541
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-15    561
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08    581
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-03    591
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-05    601
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-07    611
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-04    621
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-13    661
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-04    681
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-05    741
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-13    811
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-05    821
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-13    871
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08    881
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-17    891
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-05    901
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-22    911
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-10    921
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08    941
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-12    951
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-26    981
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08   1021
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-17   1031
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-05   1041
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-22   1061
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-10   1071
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-07   1081
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08   1091
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-05   1111
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-26   1121
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-15   1141
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-17   1161
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-05   1171
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-12   1181
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08   1231
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-06   1241
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-14   1251
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-13   1261
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-05   1271
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-26   1281
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-06   1291
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-09   1301
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-03   1321
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08   1331
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-07   1341
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-06   1351
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-17   1361
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-09   1391
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-22   1401
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08   1421
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-06   1431
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-02   1441
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-13   1451
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-05   1461
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-06   1481
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-09   1491
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-12   1501
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-15   1511
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-08   1521
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   75-06   1531
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-17   1541
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   64-14   1551
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-06   1571
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   76-09   1581
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-22   1591
+   2437946 kb1689                                                     jyee            06/27 20:23    1  mThC.q   65-10   1601
+   2437946 kb1689                                                     jyee            06/27 20:32    1  mThC.q   76-12   1631
+   2437946 kb1689                                                     jyee            06/27 20:32    1  mThC.q   76-12   1641
+   2437946 kb1689                                                     jyee            06/27 20:32    1  mThC.q   76-12   1651
+   2437946 kb1689                                                     jyee            06/27 20:32    1  mThC.q   76-12   1671
+   2437946 kb1689                                                     jyee            06/27 20:32    1  mThC.q   76-12   1681
+   2437946 kb1689                                                     jyee            06/27 20:32    1  mThC.q   76-12   1701
+   2437946 kb1689                                                     jyee            06/27 20:33    1  mThC.q   76-12   1751
+   2437946 kb1689                                                     jyee            06/27 20:33    1  mThC.q   93-02   1761
+   2437946 kb1689                                                     jyee            06/27 20:33    1  mThC.q   76-12   1781
+   2437946 kb1689                                                     jyee            06/27 20:33    1  mThC.q   93-02   1801
+   2437946 kb1689                                                     jyee            06/27 20:33    1  mThC.q   93-02   1821
+   2437946 kb1689                                                     jyee            06/27 20:36    1  mThC.q   75-06   1831
+   2437946 kb1689                                                     jyee            06/27 21:30    1  mThC.q   64-06   1841
+   2437946 kb1689                                                     jyee            06/27 22:01    1  mThC.q   65-16   1871
+   2437946 kb1689                                                     jyee            06/27 22:07    1  mThC.q   75-04   1881
+   2437946 kb1689                                                     jyee            06/27 22:12    1  mThC.q   76-04   1891
+   2437946 kb1689                                                     jyee            06/27 23:00    1  mThC.q   64-05   1921
+   2437946 kb1689                                                     jyee            06/27 23:04    1  mThC.q   93-04   1931
+   2437946 kb1689                                                     jyee            06/27 23:08    1  mThC.q   65-16   1941
+   2437946 kb1689                                                     jyee            06/27 23:14    1  mThC.q   65-27   1951
+   2437946 kb1689                                                     jyee            06/27 23:21    1  mThC.q   65-21   1981
+   2437946 kb1689                                                     jyee            06/27 23:21    1  mThC.q   76-12   1991
+   2437946 kb1689                                                     jyee            06/27 23:22    1  mThC.q   76-06   2001
+   2437946 kb1689                                                     jyee            06/27 23:25    1  mThC.q   93-03   2011
+   2437946 kb1689                                                     jyee            06/27 23:28    1  mThC.q   93-02   2021
+   2437946 kb1689                                                     jyee            06/27 23:32    1  mThC.q   64-12   2031
+   2437946 kb1689                                                     jyee            06/27 23:36    1  mThC.q   64-07   2041
+   2437946 kb1689                                                     jyee            06/27 23:40    1  mThC.q   65-17   2051
+   2437946 kb1689                                                     jyee            06/27 23:48    1  mThC.q   64-12   2061
+   2437946 kb1689                                                     jyee            06/27 23:54    1  mThC.q   65-03   2071
+   2437946 kb1689                                                     jyee            06/27 23:55    1  mThC.q   76-04   2081
+   2437946 kb1689                                                     jyee            06/27 23:58    1  mThC.q   65-03   2091
+   2437946 kb1689                                                     jyee            06/28 00:01    1  mThC.q   64-06   2101
+   2437946 kb1689                                                     jyee            06/28 00:09    1  mThC.q   64-06   2111
+   2437946 kb1689                                                     jyee            06/28 00:11    1  mThC.q   64-06   2121
+   2437946 kb1689                                                     jyee            06/28 00:12    1  mThC.q   65-03   2131
+   2437946 kb1689                                                     jyee            06/28 00:14    1  mThC.q   64-05   2141
+   2437946 kb1689                                                     jyee            06/28 00:15    1  mThC.q   64-06   2151
+   2437946 kb1689                                                     jyee            06/28 00:18    1  mThC.q   93-02   2161
+   2437946 kb1689                                                     jyee            06/28 00:19    1  mThC.q   64-05   2171
+   2437946 kb1689                                                     jyee            06/28 00:20    1  mThC.q   65-03   2181
+   2437946 kb1689                                                     jyee            06/28 00:20    1  mThC.q   76-04   2191
+   2437946 kb1689                                                     jyee            06/28 00:21    1  mThC.q   93-01   2211
+   2437946 kb1689                                                     jyee            06/28 00:25    1  mThC.q   76-04   2221
+   2437946 kb1689                                                     jyee            06/28 00:26    1  mThC.q   93-02   2231
+   2437946 kb1689                                                     jyee            06/28 00:26    1  mThC.q   76-04   2241
+   2437946 kb1689                                                     jyee            06/28 00:27    1  mThC.q   76-04   2251
+   2437946 kb1689                                                     jyee            06/28 00:27    1  mThC.q   93-02   2261
+   2437946 kb1689                                                     jyee            06/28 00:29    1  mThC.q   65-03   2271
+   2437946 kb1689                                                     jyee            06/28 00:31    1  mThC.q   93-01   2281
+   2437946 kb1689                                                     jyee            06/28 00:33    1  mThC.q   76-12   2291
+   2437946 kb1689                                                     jyee            06/28 00:33    1  mThC.q   76-06   2301
+   2437946 kb1689                                                     jyee            06/28 00:34    1  mThC.q   64-06   2311
+   2437946 kb1689                                                     jyee            06/28 00:39    1  mThC.q   76-03   2321
+   2437946 kb1689                                                     jyee            06/28 00:40    1  mThC.q   64-05   2331
+   2437946 kb1689                                                     jyee            06/28 00:41    1  mThC.q   76-12   2341
+   2437946 kb1689                                                     jyee            06/28 00:43    1  mThC.q   76-03   2351
+   2437946 kb1689                                                     jyee            06/28 00:47    1  mThC.q   76-03   2361
+   2437946 kb1689                                                     jyee            06/28 00:48    1  mThC.q   76-06   2371
+   2437946 kb1689                                                     jyee            06/28 00:49    1  mThC.q   76-12   2381
+   2437946 kb1689                                                     jyee            06/28 00:50    1  mThC.q   76-03   2391
+   2437946 kb1689                                                     jyee            06/28 00:50    1  mThC.q   65-27   2401
+   2437946 kb1689                                                     jyee            06/28 00:52    1  mThC.q   76-12   2411
+   2437946 kb1689                                                     jyee            06/28 00:54    1  mThC.q   93-01   2421
+   2437946 kb1689                                                     jyee            06/28 00:55    1  mThC.q   93-02   2441
+   2437946 kb1689                                                     jyee            06/28 01:02    1  mThC.q   65-03   2471
+   2437946 kb1689                                                     jyee            06/28 01:09    1  mThC.q   76-03   2511
+   2437946 kb1689                                                     jyee            06/28 01:11    1  mThC.q   76-12   2521
+   2437946 kb1689                                                     jyee            06/28 01:23    1  mThC.q   76-04   2591
+   2437946 kb1689                                                     jyee            06/28 01:24    1  mThC.q   65-24   2631
+   2437946 kb1689                                                     jyee            06/28 01:24    1  mThC.q   65-24   2641
+   2437946 kb1689                                                     jyee            06/28 01:25    1  mThC.q   65-24   2671
+   2437946 kb1689                                                     jyee            06/28 01:28    1  mThC.q   65-24   2681
+   2437946 kb1689                                                     jyee            06/28 01:30    1  mThC.q   76-12   2701
+   2437946 kb1689                                                     jyee            06/28 01:33    1  mThC.q   65-17   2721
+   2437946 kb1689                                                     jyee            06/28 01:36    1  mThC.q   65-17   2731
+   2437946 kb1689                                                     jyee            06/28 01:36    1  mThC.q   65-26   2741
+   2437946 kb1689                                                     jyee            06/28 01:38    1  mThC.q   65-13   2751
+   2437946 kb1689                                                     jyee            06/28 01:41    1  mThC.q   76-09   2771
+   2437946 kb1689                                                     jyee            06/28 01:41    1  mThC.q   76-09   2781
+   2437946 kb1689                                                     jyee            06/28 01:42    1  mThC.q   76-04   2791
+   2437946 kb1689                                                     jyee            06/28 01:42    1  mThC.q   76-03   2801
+   2437946 kb1689                                                     jyee            06/28 01:46    1  mThC.q   76-03   2821
+   2437946 kb1689                                                     jyee            06/28 01:46    1  mThC.q   76-03   2831
+   2437946 kb1689                                                     jyee            06/28 01:47    1  mThC.q   76-06   2841
+   2437946 kb1689                                                     jyee            06/28 01:49    1  mThC.q   76-06   2851
+   2437946 kb1689                                                     jyee            06/28 01:50    1  mThC.q   93-04   2861
+   2437946 kb1689                                                     jyee            06/28 01:50    1  mThC.q   93-02   2871
+   2437946 kb1689                                                     jyee            06/28 01:50    1  mThC.q   93-01   2881
+   2437946 kb1689                                                     jyee            06/28 01:52    1  mThC.q   76-06   2891
+   2437946 kb1689                                                     jyee            06/28 01:52    1  mThC.q   65-03   2901
+   2437946 kb1689                                                     jyee            06/28 01:53    1  mThC.q   93-03   2911
+   2437946 kb1689                                                     jyee            06/28 01:54    1  mThC.q   76-06   2931
+   2437946 kb1689                                                     jyee            06/28 01:57    1  mThC.q   76-12   2941
+   2437946 kb1689                                                     jyee            06/28 01:59    1  mThC.q   76-04   2951
+   2437946 kb1689                                                     jyee            06/28 02:01    1  mThC.q   65-24   2961
+   2437946 kb1689                                                     jyee            06/28 02:01    1  mThC.q   76-12   2981
+   2437946 kb1689                                                     jyee            06/28 02:02    1  mThC.q   76-04   2991
+   2437946 kb1689                                                     jyee            06/28 02:02    1  mThC.q   76-04   3001
+   2437946 kb1689                                                     jyee            06/28 02:07    1  mThC.q   93-04   3021
+   2437946 kb1689                                                     jyee            06/28 02:10    1  mThC.q   65-24   3031
+   2437946 kb1689                                                     jyee            06/28 02:10    1  mThC.q   93-04   3041
+   2437946 kb1689                                                     jyee            06/28 02:11    1  mThC.q   93-04   3051
+   2437946 kb1689                                                     jyee            06/28 02:12    1  mThC.q   93-04   3061
+   2437946 kb1689                                                     jyee            06/28 02:17    1  mThC.q   93-04   3071
+   2437946 kb1689                                                     jyee            06/28 02:18    1  mThC.q   93-04   3081
+   2437946 kb1689                                                     jyee            06/28 02:20    1  mThC.q   93-04   3091
+   2437946 kb1689                                                     jyee            06/28 02:20    1  mThC.q   93-04   3101
+   2437946 kb1689                                                     jyee            06/28 02:21    1  mThC.q   93-04   3111
+   2437946 kb1689                                                     jyee            06/28 02:27    1  mThC.q   64-08   3121
+   2437946 kb1689                                                     jyee            06/28 02:29    1  mThC.q   76-03   3141
+   2437946 kb1689                                                     jyee            06/28 02:31    1  mThC.q   76-03   3151
+   2437946 kb1689                                                     jyee            06/28 02:33    1  mThC.q   64-08   3161
+   2437946 kb1689                                                     jyee            06/28 02:37    1  mThC.q   65-24   3171
+   2437946 kb1689                                                     jyee            06/28 02:39    1  mThC.q   64-06   3181
+   2437946 kb1689                                                     jyee            06/28 02:39    1  mThC.q   65-27   3191
+   2437946 kb1689                                                     jyee            06/28 02:40    1  mThC.q   64-05   3201
+   2437946 kb1689                                                     jyee            06/28 02:40    1  mThC.q   76-03   3211
+   2437946 kb1689                                                     jyee            06/28 02:41    1  mThC.q   65-24   3221
+   2437946 kb1689                                                     jyee            06/28 02:42    1  mThC.q   76-03   3241
+   2437946 kb1689                                                     jyee            06/28 02:43    1  mThC.q   76-12   3251
+   2437946 kb1689                                                     jyee            06/28 02:45    1  mThC.q   76-03   3261
+   2437946 kb1689                                                     jyee            06/28 02:50    1  mThC.q   75-01   3271
+   2437946 kb1689                                                     jyee            06/28 02:52    1  mThC.q   75-01   3281
+   2437946 kb1689                                                     jyee            06/28 02:52    1  mThC.q   75-01   3291
+   2437946 kb1689                                                     jyee            06/28 02:53    1  mThC.q   76-03   3301
+   2437946 kb1689                                                     jyee            06/28 02:53    1  mThC.q   65-24   3311
+   2437946 kb1689                                                     jyee            06/28 02:53    1  mThC.q   93-02   3321
+   2437946 kb1689                                                     jyee            06/28 02:56    1  mThC.q   76-12   3331
+   2437946 kb1689                                                     jyee            06/28 02:57    1  mThC.q   93-01   3341
+   2437946 kb1689                                                     jyee            06/28 02:58    1  mThC.q   76-12   3351
+   2437946 kb1689                                                     jyee            06/28 03:04    1  mThC.q   76-12   3361
+   2437946 kb1689                                                     jyee            06/28 03:09    1  mThC.q   65-22   3371
+   2437946 kb1689                                                     jyee            06/28 03:13    1  mThC.q   76-12   3391
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-03     81
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   75-02    101
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-01    121
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-05    141
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-12    161
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-11    181
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   75-02    201
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   75-02    221
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-14    241
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-08    261
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-04    281
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-03    301
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   75-02    321
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-05    341
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-01    361
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-11    381
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-12    401
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   76-07    421
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-14    441
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   93-01    461
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-08    481
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-04    501
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-03    521
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   76-07    541
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-01    561
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-05    581
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   65-03    601
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-12    621
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-11    641
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   65-15    661
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   65-09    681
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   76-07    701
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   65-29    721
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   93-01    741
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   65-18    761
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   76-07    781
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   76-08    801
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   65-03    821
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-14    841
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-08    861
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-04    881
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   65-15    901
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   65-09    921
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   76-07    941
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   64-03    961
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   65-29    981
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   93-01   1001
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   76-08   1021
+   2346789 mb192                                                      jyee            06/24 13:53    1  mThC.q   76-03   1041
+   2346789 mb192                                                      jyee            06/24 14:09    1  mThC.q   93-04   1061
+   2346789 mb192                                                      jyee            06/24 14:40    1  mThC.q   65-27   1081
+   2346789 mb192                                                      jyee            06/24 14:47    1  mThC.q   75-04   1101
+   2346789 mb192                                                      jyee            06/24 14:50    1  mThC.q   76-09   1121
+   2346789 mb192                                                      jyee            06/24 15:34    1  mThC.q   75-04   1141
+   2346789 mb192                                                      jyee            06/24 15:35    1  mThC.q   76-06   1161
+   2346789 mb192                                                      jyee            06/24 17:32    1  mThC.q   76-08   1201
+   2346789 mb192                                                      jyee            06/24 20:34    1  mThC.q   65-20   1241
+   2346789 mb192                                                      jyee            06/24 20:49    1  mThC.q   65-20   1261
+   2346789 mb192                                                      jyee            06/24 21:04    1  mThC.q   65-24   1281
+   2346789 mb192                                                      jyee            06/24 21:18    1  mThC.q   76-03   1301
+   2346789 mb192                                                      jyee            06/24 21:53    1  mThC.q   65-14   1341
+   2346789 mb192                                                      jyee            06/24 22:54    1  mThC.q   76-03   1381
+   2346789 mb192                                                      jyee            06/25 02:22    1  mThC.q   64-02   1601
+   2346789 mb192                                                      jyee            06/25 03:08    1  mThC.q   75-02   1661
+   2346789 mb192                                                      jyee            06/25 04:06    1  mThC.q   64-02   1781
+   2346789 mb192                                                      jyee            06/25 06:54    1  mThC.q   64-13   1881
+   2346789 mb192                                                      jyee            06/25 06:54    1  mThC.q   64-13   1901
+   2346789 mb192                                                      jyee            06/25 07:03    1  mThC.q   64-13   1921
+   2346789 mb192                                                      jyee            06/25 07:45    1  mThC.q   75-06   1941
+   2346789 mb192                                                      jyee            06/25 08:04    1  mThC.q   75-06   1961
+   2346789 mb192                                                      jyee            06/25 08:24    1  mThC.q   65-21   1981
+   2346789 mb192                                                      jyee            06/25 08:26    1  mThC.q   65-21   2001
+   2346789 mb192                                                      jyee            06/25 08:40    1  mThC.q   65-21   2021
+   2346789 mb192                                                      jyee            06/25 09:49    1  mThC.q   65-26   2041
+   2346789 mb192                                                      jyee            06/25 10:38    1  mThC.q   76-10   2081
+   2346789 mb192                                                      jyee            06/25 11:52    1  mThC.q   76-10   2161
+   2346789 mb192                                                      jyee            06/25 12:01    1  mThC.q   76-08   2181
+Load=1815.9, 5568/296 slots avail/disabled (76 nodes, 2 down), licenses: none used.
+ 26/8 queue entries disabled/need attention, cluster is 42.3% used at 77.0% eff.
+
+qstat+ -debug ex.1 -X
+qstat+: ExecQstat(): executing <cat ex.1/qstat-r.xml>
+qstat+: ExecQstat(): executing <cat ex.1/qstat-f.xml>
+Total running (PEs/jobs) = 2358/1074, 0 queued (job) for all users.
+Load=1815.9, 5568/296 slots avail/disabled (76 nodes, 2 down), licenses: none used.
+ 26/8 queue entries disabled/need attention, cluster is 42.3% used at 77.0% eff.
+
+qstat+ -debug ex.2
+qstat+: ExecQstat(): executing <cat ex.2/qstat-r.xml>
+qstat+: ExecQstat(): executing <cat ex.2/qstat-f.xml>
+Total running (PEs/jobs) = 2374/1075, 0 queued (job) for all users.
+  20 users with running jobs (PEs/jobs):
+         16/1 for bourkeb
+         60/3 for brandaor
+         12/1 for cabreroa
+        53/22 for campanam
+         40/1 for chaks
+         24/1 for connellym
+         96/6 for erickoch
+           96 for gresse
+            5 for holmk
+      800/203 for ingushin
+         68/3 for jassoj
+          703 for jyee
+         85/2 for myerse
+            1 for pappalardop
+         20/1 for roa-varona
+            6 for spasojevict
+         19/2 for talaveraa
+         62/7 for uribeje
+         96/3 for villanueval
+        112/8 for zhangy
+Load=1841.5, 5568/296 slots avail/disabled (76 nodes, 2 down), licenses: none used.
+ 26/8 queue entries disabled/need attention, cluster is 42.6% used at 77.6% eff.
+
+qstat+ -debug ex.2 -j 2437501
+qstat+: ExecQstat(): executing <cat ex.2/qstat-j-2437501.txt>
+ job_number:                  2437501
+ job_name:                    K210919_L2
+ submission_time:             06/27/2024 18:14:32.709
+ cwd:                         /pool/sao/ingushin/AF_2021_prime/MPI_KB210919_300cores/KB210919_STD_Local_2
+ script_file:                 MPI_run_on_Hydra.job
+ hard_queue_list:             mThC.q
+ parallel environment:        mpich range: 200
+ usage                 1:     wallclock = 15:44:58, cpu = 129:10:19:33, mem = 11453607.12286 GBs, io = 0.36236 GB, iow = 0.000 s, ioops = 391615, vmem = 211.409G, maxvmem = 211.409G, rss = 50.181G, maxrss = 50.181G, pss = 47.213G, smem = 3.241G, pmem = 46.980G, maxpss = 47.213G
+
+qstat+ -debug ex.2 -nlist 2437501
+qstat+: ExecQstat(): executing <cat ex.2/qstat-f.xml>
+   jobID  task jobname                             user             #pes/#nodes - list of nodes
+ 2437501       K210919_L2                          ingushin          200/5      - 29@64-01 30@64-11 36@65-20 49@65-25 56@76-05
+
+qstat+ -debug ex.3
+qstat+: ExecQstat(): executing <cat ex.3/qstat-r.xml>
+cat: ex.3/qstat-r.xml: No such file or directory
+qstat+: ExecQstat(): command failed <>
+
+qstat+ -debug ex.3 +a% -u erickoch
+qstat+: ExecQstat(): executing <cat ex.3/qstat-r-erickoch.xml>
+qstat+: ExecQstat(): executing <cat ex.3/qstat-f-erickoch.xml>
+Total running (PEs/jobs) = 96/6, 0 queued (job) for user 'erickoch'.
+     jobID name                                                            stat     age nPEs      cpu% queue     node taskID
+   2436756 casa_m83_imaging                                                   r   +3:19   16      4.1% mThM.q   65-06      1
+   2436756 casa_m83_imaging                                                   r   +3:19   16      5.1% mThM.q   76-04      2
+   2436756 casa_m83_imaging                                                   r   +3:19   16      6.3% mThM.q   76-14      3
+   2436756 casa_m83_imaging                                                   r   +3:19   16      3.5% mThM.q   76-06      4
+   2436756 casa_m83_imaging                                                   r   +3:19   16      6.0% mThM.q   65-20      5
+   2436756 casa_m83_imaging                                                   r   +3:19   16      4.0% mThM.q   65-03      6
+
+qstat+ -debug ex.3 -j 2436756
+qstat+: ExecQstat(): executing <cat ex.3/qstat-j-2436756.txt>
+ job_number:                  2436756
+ job_name:                    casa_m83_imaging
+ submission_time:             06/27/2024 14:57:02.542
+ cwd:                         /scratch/public/sao/erickoch/M83_Band3
+ script_file:                 /home/erickoch/M83_Band3/hydra_scripts/jobarray_run_co10_1kms_imaging.job
+ hard_queue_list:             mThM.q
+ hard_resource_list:          h_data=10G,h_vmem=10G,mem_res=160G,use_himem=TRUE
+ parallel environment:        mthread range: 16
+ usage                 1:     wallclock = 19:02:13, cpu = 2:11:50:59, mem = 8691632.00045 GBs, io = 5016.97950 GB, iow = 0.060 s, ioops = 59368973, vmem = 8.918G, maxvmem = 66.138G, rss = 1.024G, maxrss = 57.991G, pss = 1.026G, smem = 6.812M, pmem = 1.025G, maxpss = 57.985G
+ usage                 2:     wallclock = 19:02:49, cpu = 3:02:56:11, mem = 15556154.47663 GBs, io = 13149.25991 GB, iow = 1.120 s, ioops = 165643611, vmem = 9.147G, maxvmem = 102.762G, rss = 1.122G, maxrss = 96.942G, pss = 1.115G, smem = 7.305M, pmem = 1.115G, maxpss = 96.935G
+ usage                 3:     wallclock = 19:02:16, cpu = 3:21:00:58, mem = 15427332.85599 GBs, io = 14627.68744 GB, iow = 0.860 s, ioops = 165907765, vmem = 50.020G, maxvmem = 79.499G, rss = 41.187G, maxrss = 73.678G, pss = 41.180G, smem = 7.363M, pmem = 41.180G, maxpss = 73.671G
+ usage                 4:     wallclock = 19:02:38, cpu = 2:02:57:06, mem = 7374303.48601 GBs, io = 6447.35102 GB, iow = 4.450 s, ioops = 79537930, vmem = 43.342G, maxvmem = 66.372G, rss = 34.315G, maxrss = 57.316G, pss = 34.574G, smem = 7.371M, pmem = 34.574G, maxpss = 57.332G
+ usage                 5:     wallclock = 19:02:11, cpu = 3:15:25:26, mem = 17428493.77643 GBs, io = 8487.03511 GB, iow = 1.210 s, ioops = 108988544, vmem = 9.192G, maxvmem = 93.131G, rss = 1023.316M, maxrss = 87.312G, pss = 1021.198M, smem = 6.918M, pmem = 1020.863M, maxpss = 87.306G
+ usage                 6:     wallclock = 19:02:16, cpu = 2:11:09:32, mem = 8638375.36177 GBs, io = 4853.56665 GB, iow = 1.090 s, ioops = 56779915, vmem = 9.384G, maxvmem = 66.372G, rss = 1.248G, maxrss = 57.994G, pss = 1.249G, smem = 7.246M, pmem = 1.249G, maxpss = 58.116G
+
+qstat+ -debug ex.3 -j 2436756.1
+qstat+: ExecQstat(): executing <cat ex.3/qstat-j-2436756.txt>
+ job_number:                  2436756
+ job_name:                    casa_m83_imaging
+ submission_time:             06/27/2024 14:57:02.542
+ cwd:                         /scratch/public/sao/erickoch/M83_Band3
+ script_file:                 /home/erickoch/M83_Band3/hydra_scripts/jobarray_run_co10_1kms_imaging.job
+ hard_queue_list:             mThM.q
+ hard_resource_list:          h_data=10G,h_vmem=10G,mem_res=160G,use_himem=TRUE
+ parallel environment:        mthread range: 16
+ usage                 1:     wallclock = 19:02:13
+                              cpu = 2:11:50:59
+                              mem = 8691632.00045 GBs
+                              io = 5016.97950 GB
+                              iow = 0.060 s
+                              ioops = 59368973
+                              vmem = 8.918G
+                              maxvmem = 66.138G
+                              rss = 1.024G
+                              maxrss = 57.991G
+                              pss = 1.026G
+                              smem = 6.812M
+                              pmem = 1.025G
+                              maxpss = 57.985G
+
+qstat+ -debug ex.3 -j 2436756.3
+qstat+: ExecQstat(): executing <cat ex.3/qstat-j-2436756.txt>
+ job_number:                  2436756
+ job_name:                    casa_m83_imaging
+ submission_time:             06/27/2024 14:57:02.542
+ cwd:                         /scratch/public/sao/erickoch/M83_Band3
+ script_file:                 /home/erickoch/M83_Band3/hydra_scripts/jobarray_run_co10_1kms_imaging.job
+ hard_queue_list:             mThM.q
+ hard_resource_list:          h_data=10G,h_vmem=10G,mem_res=160G,use_himem=TRUE
+ parallel environment:        mthread range: 16
+ usage                 3:     wallclock = 19:02:16
+                              cpu = 3:21:00:58
+                              mem = 15427332.85599 GBs
+                              io = 14627.68744 GB
+                              iow = 0.860 s
+                              ioops = 165907765
+                              vmem = 50.020G
+                              maxvmem = 79.499G
+                              rss = 41.187G
+                              maxrss = 73.678G
+                              pss = 41.180G
+                              smem = 7.363M
+                              pmem = 41.180G
+                              maxpss = 73.671G
+
+qstat+ -debug ex.4 +a% -u ingushin
+qstat+: ExecQstat(): executing <cat ex.4/qstat-r-ingushin.xml>
+qstat+: ExecQstat(): executing <cat ex.4/qstat-f-ingushin.xml>
+Total running (PEs/jobs) = 800/203, 0 queued (job) for user 'ingushin'.
+     jobID name                                                            stat     age nPEs      cpu% queue     node taskID
+   2435005 K210919_L3                                                         r   +3:22  200     21.5% mThC.q   76-10       
+   2437498 K210919_L1                                                         r   +3:16  200     17.8% mThC.q   65-04       
+   2437501 K210919_L2                                                         r   +3:16  200     17.6% mThC.q   64-11       
+   2435974 KB210690_1                                                         r   +3:22    1     22.9% mThC.q   65-09       
+   2435975 KB210690_2                                                         r   +3:22    1     22.9% mThC.q   65-09       
+   2435976 KB210690_3                                                         r   +3:22    1     22.8% mThC.q   65-21       
+   2435977 KB210690_4                                                         r   +3:22    1     22.9% mThC.q   65-09       
+   2435978 KB210690_5                                                         r   +3:22    1     22.8% mThC.q   65-21       
+   2435979 KB210690_6                                                         r   +3:22    1     22.9% mThC.q   65-09       
+   2435980 KB210690_7                                                         r   +3:22    1     22.8% mThC.q   65-21       
+   2435981 KB210690_8                                                         r   +3:22    1     22.9% mThC.q   65-09       
+   2435982 KB210690_9                                                         r   +3:22    1     22.8% mThC.q   65-21       
+   2435983 KB210690_10                                                        r   +3:22    1     22.9% mThC.q   65-09       
+   2435984 KB210690_11                                                        r   +3:22    1     22.8% mThC.q   65-21       
+   2435985 KB210690_12                                                        r   +3:22    1     22.9% mThC.q   64-10       
+   2435986 KB210690_13                                                        r   +3:22    1     22.9% mThC.q   65-09       
+   2435987 KB210690_14                                                        r   +3:22    1     22.8% mThC.q   65-21       
+   2435988 KB210690_15                                                        r   +3:22    1     22.8% mThC.q   64-09       
+   2435989 KB210690_16                                                        r   +3:22    1     22.9% mThC.q   64-10       
+   2435990 KB210690_17                                                        r   +3:22    1     22.9% mThC.q   65-27       
+   2435991 KB210690_18                                                        r   +3:22    1     22.8% mThC.q   93-04       
+   2435992 KB210690_19                                                        r   +3:22    1     22.9% mThC.q   65-09       
+   2435993 KB210690_20                                                        r   +3:22    1     22.8% mThC.q   65-21       
+   2435994 KB210690_21                                                        r   +3:22    1     22.9% mThC.q   65-22       
+   2435995 KB210690_22                                                        r   +3:22    1     22.8% mThC.q   76-11       
+   2435996 KB210690_23                                                        r   +3:22    1     22.8% mThC.q   65-20       
+   2435997 KB210690_24                                                        r   +3:22    1     22.9% mThC.q   65-11       
+   2435998 KB210690_25                                                        r   +3:22    1     22.9% mThC.q   64-07       
+   2435999 KB210690_26                                                        r   +3:22    1     22.8% mThC.q   76-04       
+   2436000 KB210690_27                                                        r   +3:22    1     22.8% mThC.q   76-07       
+   2436001 KB210690_28                                                        r   +3:22    1     22.9% mThC.q   65-27       
+   2436002 KB210690_29                                                        r   +3:22    1     22.9% mThC.q   65-09       
+   2436003 KB210690_30                                                        r   +3:22    1     22.8% mThC.q   76-11       
+   2436004 KB210690_31                                                        r   +3:22    1     22.9% mThC.q   65-22       
+   2436005 KB210690_32                                                        r   +3:22    1     22.9% mThC.q   65-18       
+   2436006 KB210690_33                                                        r   +3:22    1     22.8% mThC.q   65-21       
+   2436007 KB210690_34                                                        r   +3:22    1     22.8% mThC.q   76-04       
+   2436008 KB210690_35                                                        r   +3:22    1     22.8% mThC.q   76-05       
+   2436009 KB210690_36                                                        r   +3:22    1     22.8% mThC.q   93-02       
+   2436010 KB210690_37                                                        r   +3:22    1     22.8% mThC.q   76-07       
+   2436011 KB210690_38                                                        r   +3:22    1     22.8% mThC.q   64-09       
+   2436012 KB210690_39                                                        r   +3:22    1     22.9% mThC.q   65-11       
+   2436013 KB210690_40                                                        r   +3:22    1     22.8% mThC.q   76-08       
+   2436014 KB210690_41                                                        r   +3:22    1     22.8% mThC.q   76-08       
+   2436015 KB210690_42                                                        r   +3:22    1     22.9% mThC.q   64-14       
+   2436016 KB210690_43                                                        r   +3:22    1     22.9% mThC.q   64-10       
+   2436017 KB210690_44                                                        r   +3:22    1     22.8% mThC.q   76-11       
+   2436018 KB210690_45                                                        r   +3:22    1     22.9% mThC.q   65-10       
+   2436019 KB210690_46                                                        r   +3:22    1     22.8% mThC.q   65-20       
+   2436020 KB210690_47                                                        r   +3:22    1     22.8% mThC.q   76-04       
+   2436021 KB210690_48                                                        r   +3:22    1     22.8% mThC.q   76-05       
+   2436022 KB210690_49                                                        r   +3:22    1     22.9% mThC.q   65-13       
+   2436023 KB210690_50                                                        r   +3:22    1     22.8% mThC.q   76-08       
+   2436024 KB210690_51                                                        r   +3:22    1     22.8% mThC.q   76-07       
+   2436025 KB210690_52                                                        r   +3:22    1     22.9% mThC.q   65-27       
+   2436026 KB210690_53                                                        r   +3:22    1     22.8% mThC.q   75-02       
+   2436027 KB210690_54                                                        r   +3:22    1     22.8% mThC.q   76-05       
+   2436028 KB210690_55                                                        r   +3:22    1     22.8% mThC.q   76-05       
+   2436029 KB210690_56                                                        r   +3:22    1     22.8% mThC.q   76-05       
+   2436030 KB210690_57                                                        r   +3:22    1     22.8% mThC.q   76-05       
+   2436031 KB210690_58                                                        r   +3:22    1     22.8% mThC.q   76-05       
+   2436032 KB210690_59                                                        r   +3:22    1     22.9% mThC.q   64-07       
+   2436033 KB210690_60                                                        r   +3:22    1     22.9% mThC.q   64-07       
+   2436034 KB210690_61                                                        r   +3:22    1     22.9% mThC.q   64-07       
+   2436035 KB210690_62                                                        r   +3:22    1     22.9% mThC.q   64-07       
+   2436036 KB210690_63                                                        r   +3:22    1     22.9% mThC.q   64-07       
+   2436037 KB210690_64                                                        r   +3:22    1     22.9% mThC.q   64-07       
+   2436038 KB210690_65                                                        r   +3:22    1     22.8% mThC.q   76-05       
+   2436039 KB210690_66                                                        r   +3:22    1     22.8% mThC.q   76-11       
+   2436040 KB210690_67                                                        r   +3:22    1     22.9% mThC.q   76-04       
+   2436041 KB210690_68                                                        r   +3:22    1     22.9% mThC.q   93-01       
+   2436042 KB210690_69                                                        r   +3:22    1     22.8% mThC.q   93-02       
+   2436043 KB210690_70                                                        r   +3:22    1     22.8% mThC.q   65-25       
+   2436044 KB210690_71                                                        r   +3:22    1     22.9% mThC.q   65-22       
+   2436045 KB210690_72                                                        r   +3:22    1     22.8% mThC.q   76-08       
+   2436046 KB210690_73                                                        r   +3:22    1     22.8% mThC.q   76-11       
+   2436047 KB210690_74                                                        r   +3:22    1     22.8% mThC.q   76-11       
+   2436048 KB210690_75                                                        r   +3:22    1     22.8% mThC.q   76-11       
+   2436049 KB210690_76                                                        r   +3:22    1     22.8% mThC.q   76-11       
+   2436050 KB210690_77                                                        r   +3:22    1     22.9% mThC.q   65-02       
+   2436051 KB210690_78                                                        r   +3:22    1     22.9% mThC.q   65-18       
+   2436052 KB210690_79                                                        r   +3:22    1     22.9% mThC.q   65-03       
+   2436053 KB210690_80                                                        r   +3:22    1     22.8% mThC.q   65-23       
+   2436054 KB210690_81                                                        r   +3:22    1     22.9% mThC.q   64-07       
+   2436055 KB210690_82                                                        r   +3:22    1     22.9% mThC.q   65-11       
+   2436056 KB210690_83                                                        r   +3:22    1     22.8% mThC.q   65-21       
+   2436057 KB210690_84                                                        r   +3:22    1     22.8% mThC.q   76-05       
+   2436058 KB210690_85                                                        r   +3:22    1     22.8% mThC.q   76-13       
+   2436059 KB210690_86                                                        r   +3:22    1     22.8% mThC.q   76-04       
+   2436060 KB210690_87                                                        r   +3:22    1     22.8% mThC.q   76-07       
+   2436061 KB210690_88                                                        r   +3:22    1     22.9% mThC.q   65-09       
+   2436062 KB210690_89                                                        r   +3:22    1     22.9% mThC.q   65-16       
+   2436063 KB210690_90                                                        r   +3:22    1     22.9% mThC.q   65-16       
+   2436064 KB210690_91                                                        r   +3:22    1     22.8% mThC.q   75-02       
+   2436065 KB210690_92                                                        r   +3:22    1     22.8% mThC.q   65-20       
+   2436066 KB210690_93                                                        r   +3:22    1     22.8% mThC.q   65-28       
+   2436067 KB210690_94                                                        r   +3:22    1     22.8% mThC.q   76-08       
+   2436068 KB210690_95                                                        r   +3:22    1     22.8% mThC.q   76-11       
+   2436069 KB210690_96                                                        r   +3:22    1     22.8% mThC.q   65-30       
+   2436070 KB210690_97                                                        r   +3:22    1     22.8% mThC.q   76-06       
+   2436071 KB210690_98                                                        r   +3:22    1     22.8% mThC.q   64-11       
+   2436072 KB210690_99                                                        r   +3:22    1     22.8% mThC.q   75-04       
+   2436073 KB210690_100                                                       r   +3:22    1     22.9% mThC.q   65-27       
+   2436074 KB210690_101                                                       r   +3:22    1     22.9% mThC.q   65-13       
+   2436075 KB210690_102                                                       r   +3:22    1     22.8% mThC.q   76-05       
+   2436076 KB210690_103                                                       r   +3:22    1     22.8% mThC.q   76-04       
+   2436077 KB210690_104                                                       r   +3:22    1     22.8% mThC.q   75-04       
+   2436078 KB210690_105                                                       r   +3:22    1     22.8% mThC.q   75-04       
+   2436079 KB210690_106                                                       r   +3:22    1     22.8% mThC.q   75-04       
+   2436080 KB210690_107                                                       r   +3:22    1     22.9% mThC.q   65-11       
+   2436081 KB210690_108                                                       r   +3:22    1     22.9% mThC.q   65-11       
+   2436082 KB210690_109                                                       r   +3:22    1     22.9% mThC.q   65-11       
+   2436083 KB210690_110                                                       r   +3:22    1     22.9% mThC.q   65-11       
+   2436084 KB210690_111                                                       r   +3:22    1     22.9% mThC.q   65-11       
+   2436085 KB210690_112                                                       r   +3:22    1     22.9% mThC.q   65-11       
+   2436086 KB210690_113                                                       r   +3:22    1     22.8% mThC.q   75-04       
+   2436087 KB210690_114                                                       r   +3:22    1     22.8% mThC.q   65-20       
+   2436088 KB210690_115                                                       r   +3:22    1     22.8% mThC.q   75-04       
+   2436089 KB210690_116                                                       r   +3:22    1     22.9% mThC.q   65-11       
+   2436090 KB210690_117                                                       r   +3:22    1     22.8% mThC.q   93-02       
+   2436091 KB210690_118                                                       r   +3:22    1     22.9% mThC.q   64-10       
+   2436092 KB210690_119                                                       r   +3:22    1     22.9% mThC.q   93-01       
+   2436093 KB210690_120                                                       r   +3:22    1     22.8% mThC.q   75-04       
+   2436094 KB210690_121                                                       r   +3:22    1     22.9% mThC.q   64-14       
+   2436095 KB210690_122                                                       r   +3:22    1     22.8% mThC.q   76-08       
+   2436096 KB210690_123                                                       r   +3:22    1     22.9% mThC.q   65-10       
+   2436097 KB210690_124                                                       r   +3:22    1     22.8% mThC.q   76-07       
+   2436098 KB210690_125                                                       r   +3:22    1     22.8% mThC.q   76-06       
+   2436099 KB210690_126                                                       r   +3:22    1     22.8% mThC.q   75-02       
+   2436100 KB210690_127                                                       r   +3:22    1     22.8% mThC.q   65-30       
+   2436101 KB210690_128                                                       r   +3:22    1     22.8% mThC.q   76-11       
+   2436102 KB210690_129                                                       r   +3:22    1     22.9% mThC.q   65-22       
+   2436103 KB210690_130                                                       r   +3:22    1     22.8% mThC.q   76-04       
+   2436104 KB210690_131                                                       r   +3:22    1     22.9% mThC.q   65-02       
+   2436105 KB210690_132                                                       r   +3:22    1     22.8% mThC.q   65-03       
+   2436106 KB210690_133                                                       r   +3:22    1     22.8% mThC.q   93-03       
+   2436107 KB210690_134                                                       r   +3:22    1     22.8% mThC.q   65-25       
+   2436108 KB210690_135                                                       r   +3:22    1     22.8% mThC.q   76-13       
+   2436109 KB210690_136                                                       r   +3:22    1     22.9% mThC.q   65-23       
+   2436110 KB210690_137                                                       r   +3:22    1     22.9% mThC.q   64-08       
+   2436111 KB210690_138                                                       r   +3:22    1     22.8% mThC.q   65-27       
+   2436112 KB210690_139                                                       r   +3:22    1     22.8% mThC.q   84-01       
+   2436113 KB210690_140                                                       r   +3:22    1     22.9% mThC.q   65-16       
+   2436114 KB210690_141                                                       r   +3:22    1     22.8% mThC.q   65-14       
+   2436115 KB210690_142                                                       r   +3:22    1     22.8% mThC.q   76-06       
+   2436116 KB210690_143                                                       r   +3:22    1     22.8% mThC.q   75-04       
+   2436117 KB210690_144                                                       r   +3:22    1     22.8% mThC.q   93-02       
+   2436118 KB210690_145                                                       r   +3:22    1     22.8% mThC.q   76-04       
+   2436119 KB210690_146                                                       r   +3:22    1     22.8% mThC.q   76-05       
+   2436120 KB210690_147                                                       r   +3:22    1     22.9% mThC.q   65-09       
+   2436121 KB210690_148                                                       r   +3:22    1     22.8% mThC.q   76-07       
+   2436122 KB210690_149                                                       r   +3:22    1     22.8% mThC.q   76-11       
+   2436123 KB210690_150                                                       r   +3:22    1     22.8% mThC.q   93-01       
+   2436124 KB210690_151                                                       r   +3:22    1     22.8% mThC.q   65-28       
+   2436125 KB210690_152                                                       r   +3:22    1     22.9% mThC.q   65-11       
+   2436126 KB210690_153                                                       r   +3:22    1     22.8% mThC.q   65-05       
+   2436127 KB210690_154                                                       r   +3:22    1     22.8% mThC.q   65-21       
+   2436128 KB210690_155                                                       r   +3:22    1     22.9% mThC.q   65-18       
+   2436129 KB210690_156                                                       r   +3:22    1     22.8% mThC.q   64-09       
+   2436130 KB210690_157                                                       r   +3:22    1     22.8% mThC.q   64-06       
+   2436131 KB210690_158                                                       r   +3:22    1     22.8% mThC.q   64-07       
+   2436132 KB210690_159                                                       r   +3:22    1     22.8% mThC.q   76-13       
+   2436133 KB210690_160                                                       r   +3:22    1     22.8% mThC.q   76-08       
+   2436134 KB210690_161                                                       r   +3:22    1     22.8% mThC.q   76-06       
+   2436135 KB210690_162                                                       r   +3:22    1     22.8% mThC.q   76-04       
+   2436136 KB210690_163                                                       r   +3:22    1     22.8% mThC.q   75-02       
+   2436137 KB210690_164                                                       r   +3:22    1     22.8% mThC.q   76-10       
+   2436138 KB210690_165                                                       r   +3:22    1     22.8% mThC.q   75-04       
+   2436139 KB210690_166                                                       r   +3:22    1     22.9% mThC.q   65-03       
+   2436140 KB210690_167                                                       r   +3:22    1     22.8% mThC.q   65-20       
+   2436141 KB210690_168                                                       r   +3:22    1     22.8% mThC.q   65-10       
+   2436142 KB210690_169                                                       r   +3:22    1     22.8% mThC.q   93-03       
+   2436143 KB210690_170                                                       r   +3:22    1     22.9% mThC.q   65-02       
+   2436144 KB210690_171                                                       r   +3:22    1     22.8% mThC.q   76-07       
+   2436145 KB210690_172                                                       r   +3:22    1     22.8% mThC.q   75-01       
+   2436146 KB210690_173                                                       r   +3:22    1     22.8% mThC.q   65-27       
+   2436147 KB210690_174                                                       r   +3:22    1     22.9% mThC.q   65-22       
+   2436148 KB210690_175                                                       r   +3:22    1     22.8% mThC.q   76-13       
+   2436149 KB210690_176                                                       r   +3:22    1     22.8% mThC.q   76-07       
+   2436150 KB210690_177                                                       r   +3:22    1     22.8% mThC.q   76-07       
+   2436151 KB210690_178                                                       r   +3:22    1     22.8% mThC.q   76-07       
+   2436152 KB210690_179                                                       r   +3:22    1     22.8% mThC.q   76-07       
+   2436153 KB210690_180                                                       r   +3:22    1     22.8% mThC.q   76-07       
+   2436154 KB210690_181                                                       r   +3:22    1     22.8% mThC.q   76-07       
+   2436155 KB210690_182                                                       r   +3:22    1     22.9% mThC.q   65-30       
+   2436156 KB210690_183                                                       r   +3:22    1     22.6% mThC.q   64-11       
+   2436157 KB210690_184                                                       r   +3:22    1     22.9% mThC.q   64-10       
+   2436158 KB210690_185                                                       r   +3:22    1     22.8% mThC.q   76-06       
+   2436159 KB210690_186                                                       r   +3:22    1     22.8% mThC.q   76-05       
+   2436160 KB210690_187                                                       r   +3:22    1     22.8% mThC.q   76-05       
+   2436161 KB210690_188                                                       r   +3:22    1     22.8% mThC.q   76-05       
+   2436162 KB210690_189                                                       r   +3:22    1     22.8% mThC.q   76-05       
+   2436163 KB210690_190                                                       r   +3:22    1     22.9% mThC.q   65-16       
+   2436164 KB210690_191                                                       r   +3:22    1     22.8% mThC.q   76-05       
+   2436165 KB210690_192                                                       r   +3:22    1     22.8% mThC.q   76-08       
+   2436166 KB210690_193                                                       r   +3:22    1     22.8% mThC.q   76-05       
+   2436167 KB210690_194                                                       r   +3:22    1     22.9% mThC.q   65-09       
+   2436168 KB210690_195                                                       r   +3:22    1     22.9% mThC.q   65-23       
+   2436169 KB210690_196                                                       r   +3:22    1     22.9% mThC.q   93-01       
+   2436170 KB210690_197                                                       r   +3:22    1     22.8% mThC.q   84-01       
+   2436171 KB210690_198                                                       r   +3:22    1     22.9% mThC.q   65-14       
+   2436172 KB210690_199                                                       r   +3:22    1     22.8% mThC.q   65-25       
+   2436173 KB210690_200                                                       r   +3:22    1     22.8% mThC.q   93-02       
+
+qstat+ -debug ex.4 -j 2435983
+qstat+: ExecQstat(): executing <cat ex.4/qstat-j-2435983.txt>
+ job_number:                  2435983
+ job_name:                    KB210690_10
+ submission_time:             06/27/2024 12:23:32.195
+ cwd:                         /pool/sao/ingushin/AF_2021_prime/KB210690/t_10
+ script_file:                 task.job
+ hard_queue_list:             mThC.q
+ usage                 1:     wallclock = 21:36:23, cpu = 21:33:15, mem = 469042.15851 GBs, io = 0.07353 GB, iow = 0.060 s, ioops = 16742, vmem = 6.063G, maxvmem = 6.063G, rss = 2.278G, maxrss = 2.278G, pss = 2.270G, smem = 8.348M, pmem = 2.270G, maxpss = 2.270G
+
+qstat+ -debug ex.4 -nlist 2435983 -u ingushin
+qstat+: ExecQstat(): executing <cat ex.4/qstat-f-ingushin.xml>
+   jobID  task jobname                             user             #pes/#nodes - list of nodes
+ 2435983       KB210690_10                         ingushin            1/1      - 1@65-09
+
+qstat+ -debug sge -geType sge +a% -u all
+qstat+: ExecQstat(): executing <cat sge/qstat-r.xml>
+qstat+: ExecQstat(): executing <cat sge/qstat-f.xml>
+Total running (PEs/jobs) = 39/39, 0 queued (job) for all users.
+     jobID name                                           user            stat     age nPEs      cpu% queue     node taskID
+   3153069 VFV24_1724                                     jsocprod           r   +3:01    8      7.5% k.q      cl2n037       
+   3153073 S9624_1736                                     jsocprod           r   +3:01    1     15.1% p4.q     cl2n042       
+   3153080 VFVF24_2024                                    jsocprod           r   +3:01    8      7.5% k.q      cl2n036       
+   3153081 VFVF24_1724                                    jsocprod           r   +3:01    8      7.5% k.q      cl2n024       
+   3153118 VFV23_2324                                     jsocprod           r   +3:01    8      7.4% k.q      cl2n041       
+   3153121 S9624_0000                                     jsocprod           r   +3:01    1     14.7% p4.q     cl2n026       
+   3153130 VFVF24_0224                                    jsocprod           r   +3:01    8      7.4% k.q      cl2n027       
+   3153131 VFVF23_2324                                    jsocprod           r   +3:01    8      7.4% k.q      cl2n032       
+   3153173 VFV24_1124                                     jsocprod           r   +3:01    8      7.2% k.q      cl2n023       
+   3153176 S9624_1112                                     jsocprod           r   +3:01    1     14.4% p4.q     cl2n029       
+   3153185 VFVF24_1424                                    jsocprod           r   +3:01    8      7.2% k.q      cl2n040       
+   3153186 VFVF24_1124                                    jsocprod           r   +3:01    8      7.2% k.q      cl2n039       
+   3153189 VFV24_0524                                     jsocprod           r   +3:01    8      7.2% k.q      cl2n035       
+   3153192 S9624_0448                                     jsocprod           r   +3:01    1     14.6% p4.q     cl2n025       
+   3153200 VFVF24_0824                                    jsocprod           r   +3:01    8      7.2% k.q      cl2n030       
+   3153201 VFVF24_0524                                    jsocprod           r   +3:01    8      7.2% k.q      cl2n022       
+   3155284 SHP_nrt28_2000                                 jsocprod           r   +2:20    1      0.7% k.q      cl2n028       
+   3155349 SHP_nrt28_2012                                 jsocprod           r   +2:20    1      0.4% k.q      cl2n024       
+   3155355 DCME_241412.cmd                                jeneen             r   +2:20    8      0.4% k.q      cl2n032       
+   3155357 DCME_241424.cmd                                jeneen             r   +2:20    8      0.4% k.q      cl2n037       
+   3155358 DCME_241436.cmd                                jeneen             r   +2:20    8      0.4% k.q      cl2n036       
+   3155359 DCME_241448.cmd                                jeneen             r   +2:20    8      0.4% k.q      cl2n039       
+   3155363 DCME_241500.cmd                                jeneen             r   +2:20    8      0.4% k.q      cl2n035       
+   3155364 DCME_241512.cmd                                jeneen             r   +2:20    8      0.4% k.q      cl2n028       
+   3155366 DCME_241524.cmd                                jeneen             r   +2:20    8      0.4% k.q      cl2n024       
+   3155369 DCME_241536.cmd                                jeneen             r   +2:20    8      0.4% k.q      cl2n040       
+   3155372 DCME_241548.cmd                                jeneen             r   +2:20    8      0.4% k.q      cl2n044       
+   3155374 DCME_241600.cmd                                jeneen             r   +2:20    8      0.4% k.q      cl2n031       
+   3155375 DCME_241612.cmd                                jeneen             r   +2:20    8      0.4% k.q      cl2n033       
+   3155377 DCME_241624.cmd                                jeneen             r   +2:20    8      0.3% k.q      cl2n028       
+   3155379 DCME_241636.cmd                                jeneen             r   +2:20    8      0.3% k.q      cl2n034       
+   3155381 DCME_241648.cmd                                jeneen             r   +2:20    8      0.3% k.q      cl2n038       
+   3155383 DCME_241700.cmd                                jeneen             r   +2:20    8      0.3% k.q      cl2n023       
+   3155432 VFnrt28_2036                                   jsocprod           r   +2:20    1      1.4% a8.q     cl2n018       
+   3155448 SHP_nrt28_2024                                 jsocprod           r   +2:20    1      0.1% k.q      cl2n033       
+   3155473 NRT28_2124                                     jsocprod           r   +2:19    1      0.1% p4.q     cl2n026       
+   3155477 VEC28_2112                                     jsocprod           r   +2:19    1      0.1% p4.q     cl2n042       
+   3155480 VFnrt28_2048                                   jsocprod           r   +2:19    1      0.1% a8.q     cl2n020       
+   3155481 aia1p5_avxSGE2.csh                             jps                r   +2:19    1      0.0% p.q      cl2n020       
