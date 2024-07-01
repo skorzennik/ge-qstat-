@@ -241,6 +241,7 @@ qstat+ -debug ex.4 -nlist 2435983 -u ingushin
 ```
 qstat+ -debug sge -geType sge +a% -u all
 ```
+
 3. Comparison file:
 
 The file `test-debug.log` illustrates the output from these commands.
