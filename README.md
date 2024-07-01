@@ -4,7 +4,7 @@
 
   `qstat+` is a `PERL` scripts to improve the output of `qstat` on a system running the Grid Engine as the job scheduler/load manager.
   
-   Release 1.01 Juk 1 2024, version 5.5/2
+   Release 1.01 Jul 1 2024, version 5.5/2
    
 
 ## Conceptual Description
@@ -21,14 +21,14 @@
 ```
 
  `qstat+` will also compute some derived quantities, like fraction of CPU usage and memory usage.
- On the HPC cluster `qstat+` was developed for, we have implemented a memeory reservation and a local SSD usage request, hence `qstat+` can return information related to both.
+ On the HPC cluster `qstat+` was developed for, we have implemented a memory reservation and a local SSD usage request, hence `qstat+` can return information related to both.
   ...
 
 ## Practical Considerations
 
  We run Altair's Grid Engine version 8.8.1 with a customized configuration, hence `qstat+` is tailored to that configuration.
  It is my intention (_in my spare time_) to clean `qstat+` to clearly identify what is specific to our configuration.
- Amongst other things:
+ Among other things:
  * we do not use the `all.q` queue, but use other queue with short names
  * our compute nodes are all called compute-NN-MM, hence `qstat+` truncates it to NN-MM
  * we implemented memory reservation
@@ -46,7 +46,7 @@
   9. show global cluster status
  10. show empty slots, -esx: expanded info
  11. show node(s) that are down
- 12. show overreserved jobs, i.e.: resMem/maxVMem > 2.5, & age > 1 hr
+ 12. show over-reserved jobs, i.e.: resMem/maxVMem > 2.5, & age > 1 hr
  13. show oversubscribed jobs, i.e.: cpu% > 133%, & age > 1 hr
  14. show inefficient jobs, i.e.: cpu% < 33%, & age > 1 hr
  15. show SSD usage
@@ -231,7 +231,7 @@ qstat+ -debug ex.3 -j 2436756
 qstat+ -debug ex.3 -j 2436756.1
 qstat+ -debug ex.3 -j 2436756.3
 ```
-   * Examples 4: differrent user, lots of jobs
+   * Examples 4: different user, lots of jobs
 ```
 qstat+ -debug ex.4 +a% -u ingushin
 qstat+ -debug ex.4 -j 2435983
@@ -241,9 +241,10 @@ qstat+ -debug ex.4 -nlist 2435983 -u ingushin
 ```
 qstat+ -debug sge -geType sge +a% -u all
 ```
-3. Comparaison file:
+3. Comparison file:
 
 The file `test-debug.log` illustrates the output from these commands.
+Click on the file to view it and see examples of `qstat+` output.
 
 ---
 
