@@ -9,30 +9,30 @@
 
 ## Conceptual Description
 
-  Runs a set of `qstat` commands and parse their output to produce a _better_ output that `qstat`
+  Runs a set of `qstat` commands and parse their output to produce a _better_ output than `qstat`
 
-  I will run one or more of the following commands:
+  It will run one or more of the following commands:
 ```
  qstat -xml -r -ext -u USER
  qstat -xml -f -u USER
  qstat -j JID
  qstat -F ssd_res,ssd_free,ssd_total -q all.q@@ssd-hosts -u nobody
- ruptime
+ ruptime or ssh HOST uptime
 ```
 
  `qstat+` will also compute some derived quantities, like fraction of CPU usage and memory usage.
  On the HPC cluster `qstat+` was developed for, we have implemented a memory reservation and a local SSD usage request, hence `qstat+` can return information related to both.
-  ...
+
 
 ## Practical Considerations
 
  We run Altair's Grid Engine version 8.8.1 with a customized configuration, hence `qstat+` is tailored to that configuration.
  It is my intention (_in my spare time_) to clean `qstat+` to clearly identify what is specific to our configuration.
  Among other things:
- * we do not use the `all.q` queue, but use other queue with short names
- * our compute nodes are all called compute-NN-MM, hence `qstat+` truncates it to NN-MM
- * we implemented memory reservation
- * we have local SSD
+ * we do not use the `all.q` queue, but use other queues (with short names),
+ * our compute nodes are all called compute-NN-MM, hence `qstat+` truncates it to NN-MM,
+ * we implemented a memory reservation consumable, and
+ * we have local SSD that can only be used by request.
 
 `qstat+` can be run in different (exclusive) modes:
   1. show summary (simple, extended or compact)
@@ -44,16 +44,16 @@
   7. show node list for a (set of) job(s)
   8. show node(s) with high load
   9. show global cluster status
- 10. show empty slots, -esx: expanded info
+ 10. show empty slots, including expanded info
  11. show node(s) that are down
  12. show over-reserved jobs, i.e.: resMem/maxVMem > 2.5, & age > 1 hr
- 13. show oversubscribed jobs, i.e.: cpu% > 133%, & age > 1 hr
+ 13. show over-subscribed jobs, i.e.: cpu% > 133%, & age > 1 hr
  14. show inefficient jobs, i.e.: cpu% < 33%, & age > 1 hr
  15. show SSD usage
  16. show help
  17. show examples
 
- and in *debug* mode, for debugging & testing.
+ and can be run in *debug* mode, for debugging & testing.
  
 ### Usage info
 
@@ -163,6 +163,31 @@ qstat+: Ver 5.5/2 - Jun 2024
 
 To run this on a different GE cluster, one needs to redefine some of the variables near the top of the ``PERL`` script:
 ```
+#
+# list of nodes: head node, login nodes, NSDs
+#
+my @logNames = qw/hydra-7 login01 login02 login04 login07/;
+my @nsdNames = qw/nsd01 nsd02/;
+my $nodePrfx = 'compute-';
+#
+# list of queues to show - all.q is ignored
+#
+my @queueSet = ('sThC.q', 'mThC.q', 'lThC.q', 'uThC.q', '', 
+                'sThM.q', 'mThM.q', 'lThM.q', 'uThM.q', '',
+                'uTxlM.rq', '',
+                'lTIO.sq', '',
+                'sTgpu.q','mTgpu.q', 'lTgpu.q', '',
+                'qgpu.iq', 'qrsh.iq', 
+    );
+#
+# queue to ignore, this can be a RE since it is used as if ($queue !~ /$ignQueue/)
+my $ignQueue = 'all.q'; 
+#
+# use ruptime or ssh $host uptime?
+#
+my $uptimeCommand = '/usr/bin/ruptime -n=25';
+# my $uptimeCommand = 'uptime';
+#
 ```
 
 ### Debugging & Testing
@@ -170,6 +195,8 @@ To run this on a different GE cluster, one needs to redefine some of the variabl
 #### Explanation
 
  The flag `-debug DIR` directs `qstat+` to read from files, located in the directory `DIR`, instead of running `qstat` and parsing its output, hence these files must contain the output of the commands `qstat+` would have run. 
+
+
  Examples of such files are provided in the `debug.tgz` archive, where 6 examples are available, including one when using the original SGE, not AGE 8.8.1. 
 
  One creates these files as follows: 
@@ -194,7 +221,6 @@ Using the provided files, you can do the following:
  1. First untar the archive
 ```
 tar xf debug.tgz
-
 ```
  2. Run `qstat+` in debug mode
 
@@ -245,7 +271,8 @@ qstat+ -debug sge -geType sge +a% -u all
 3. Comparison file:
 
 The file `test-debug.log` illustrates the output from these commands.
-Click on the file to view it and see examples of `qstat+` output.
+
+ * Click on the file to view it and see examples of `qstat+` output.
 
 ---
 
