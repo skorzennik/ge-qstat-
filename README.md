@@ -1,4 +1,4 @@
-# SGK `qstat+` PERL wrapper around GridEngine qstat
+# SGK `qstat+` PERL wrapper around GridEngine `qstat`
 
 ## Description
 
